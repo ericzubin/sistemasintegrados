@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_MuestraFinCuentasPorCobrar" value="name:IdCuentaPorCobrar;datatype:int,name:Fecha;datatype:date,name:Monto;datatype:real,name:Status;datatype:int,name:Plazo;datatype:date,name:Tasa;datatype:real,name:IdVenta;datatype:int" />
+	<infoitem key="UD_RS5" value="name:IdCuentaPorCobrar;datatype:int,name:Fecha;datatype:date,name:Monto;datatype:real,name:Status;datatype:int,name:Plazo;datatype:date,name:Tasa;datatype:real,name:IdVenta;datatype:int" />
+</info>

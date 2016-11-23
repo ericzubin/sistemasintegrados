@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R10" value="name:IdMetodoPago;datatype:int,name:Nombre;datatype:string,name:Status;datatype:int,name:Observacion;datatype:string,name:IdCliente;datatype:int" />
+</info>

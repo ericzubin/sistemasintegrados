@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R20" value="name:IdPuesto;datatype:int,name:Nombre;datatype:string,name:Status;datatype:int,name:Descripcion;datatype:string,name:Nivel;datatype:string,name:PersonalRequerido;datatype:int" />
+</info>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R28" value="name:IdDevolucion;datatype:int,name:Fecha;datatype:date,name:Motivo;datatype:string,name:IdVenta;datatype:int,name:IdCompra;datatype:int" />
+</info>

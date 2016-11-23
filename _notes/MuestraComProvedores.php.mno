@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_MuestraComProvedores" value="name:IdProveedor;datatype:int,name:Nombre;datatype:string,name:DomicilioFiscal;datatype:string,name:DomicilioParticular;datatype:string,name:RFC;datatype:string,name:Telefono;datatype:int,name:Correo;datatype:string,name:Status;datatype:int" />
+	<infoitem key="UD_RS4" value="name:IdProveedor;datatype:int,name:Nombre;datatype:string,name:DomicilioFiscal;datatype:string,name:DomicilioParticular;datatype:string,name:RFC;datatype:string,name:Telefono;datatype:int,name:Correo;datatype:string,name:Status;datatype:int" />
+</info>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R21" value="name:IdSucursal;datatype:int,name:Nombre;datatype:string,name:localizacion;datatype:string,name:Status;datatype:int,name:Telefono;datatype:int,name:DomicilioFiscal;datatype:string" />
+</info>

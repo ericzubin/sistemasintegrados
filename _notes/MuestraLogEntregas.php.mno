@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R16" value="name:IdEntrega;datatype:int,name:Fecha;datatype:date,name:Status;datatype:int,name:Observaciones;datatype:string,name:NombreReceptor;datatype:string" />
+</info>

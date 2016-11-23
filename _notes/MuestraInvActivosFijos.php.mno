@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R11" value="name:IdActivo;datatype:int,name:Nombre;datatype:string,name:Caracteristicas;datatype:string,name:Estado;datatype:string,name:TipoActivo;datatype:string,name:IdSucursal;datatype:int" />
+</info>

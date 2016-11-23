@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RS8" value="name:IdFormaPago;datatype:int,name:Nombre;datatype:string,name:Status;datatype:int,name:Observacion;datatype:string,name:IdVenta;datatype:int,name:IdCompra;datatype:int" />
+</info>

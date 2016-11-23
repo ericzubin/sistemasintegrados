@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R23" value="name:IdCuenta;datatype:string,name:Password;datatype:string,name:TipoCuenta;datatype:string,name:Intentos;datatype:int,name:Status;datatype:int,name:FechaUltimoAcceso;datatype:date,name:IdTipo;datatype:int" />
+</info>

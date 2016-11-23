@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R29" value="name:IdVenta;datatype:int,name:Fecha;datatype:date,name:Monto;datatype:real,name:NumeroArticulo;datatype:int,name:Status;datatype:int,name:IdCliente;datatype:int,name:IdIngreso;datatype:int" />
+</info>

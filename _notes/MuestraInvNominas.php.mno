@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R13" value="name:IdNomina;datatype:int,name:Monto;datatype:real,name:FechaPago;datatype:date,name:MotivoPago;datatype:string,name:Dias;datatype:int,name:Status;datatype:int" />
+</info>

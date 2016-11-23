@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R24" value="name:IdPermiso;datatype:int,name:TipoPermiso;datatype:string,name:Status;datatype:int,name:FechaOtorgacion;datatype:date,name:FechaVencimiento;datatype:date" />
+</info>

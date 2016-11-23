@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RS6" value="name:IdCuentaPorPagar;datatype:int,name:Fecha;datatype:date,name:Monto;datatype:real,name:Status;datatype:int,name:Plazo;datatype:date,name:Tasa;datatype:real,name:IdCompra;datatype:int" />
+</info>

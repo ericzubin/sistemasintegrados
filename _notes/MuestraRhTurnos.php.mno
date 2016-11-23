@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R22" value="name:IdTurno;datatype:int,name:Nombre;datatype:string,name:HoraEntrada;datatype:time,name:HoraSalida;datatype:time,name:DiasLaborales;datatype:string,name:TipoJornada;datatype:string,name:Status;datatype:int" />
+</info>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R19" value="name:IdEmpleado;datatype:int,name:Nombre;datatype:string,name:Telefono;datatype:int,name:Direccion;datatype:string,name:FechaNacimiento;datatype:date,name:FechaContratacion;datatype:date,name:RFC;datatype:string,name:IMSS;datatype:int,name:Correo;datatype:string,name:Sexo;datatype:int,name:EstadoCivil;datatype:string,name:CURP;datatype:string,name:IdDepartamento;datatype:int,name:IdPuesto;datatype:int,name:IdNomina;datatype:int,name:IdCuenta;datatype:string,name:IdDepartamentos;datatype:int,name:IdTurno;datatype:int,name:IdCompra;datatype:int,name:IdVenta;datatype:int" />
+</info>

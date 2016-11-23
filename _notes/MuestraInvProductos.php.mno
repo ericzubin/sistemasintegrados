@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_R14" value="name:IdProducto;datatype:int,name:Nombre;datatype:string,name:Marca;datatype:string,name:Descripcion;datatype:string,name:Existencia;datatype:int,name:UnidadMedicion;datatype:string,name:Categoria;datatype:string,name:PrecioCompra;datatype:real,name:PrecioVenta;datatype:real,name:Descuento;datatype:real,name:ImpuestoEspecial;datatype:real" />
+</info>
