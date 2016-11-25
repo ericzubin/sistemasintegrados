@@ -52,13 +52,36 @@ $totalPages_R15 = ceil($totalRows_R15/$maxRows_R15)-1;
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Mostrar Suministros</title>
+
+
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
+
+<div align="center">
+                    <h1 class="page-header">Mostrar Suministro</h1>
+</div>
+<div align="center" class="panel-body">
+
+<div  class="table-responsive">
+
 <form id="form1" name="form1" method="post" action="">
-  <table border="1">
+  <table border="1" class="table table-striped table-bordered table-hover" >
     <tr>
       <td>IdSuministro</td>
       <td>Nombre</td>
@@ -79,6 +102,9 @@ $totalPages_R15 = ceil($totalRows_R15/$maxRows_R15)-1;
       <?php } while ($row_R15 = mysql_fetch_assoc($R15)); ?>
   </table>
 </form>
+</div>
+</div>
+
 </body>
 </html>
 <?php
