@@ -74,8 +74,9 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
                     <h1 class="page-header">Insertar Entrega</h1>
 </div>
 
+                        <div class="">
 
-<form id="form1" name="form1" method="post" action="">
+<form id="form1" role="" name="form1" method="post" action="">
 </form>
 
 <form method="post" name="form2" action="<?php echo $editFormAction; ?>">
@@ -107,6 +108,8 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
   </table>
   <input type="hidden" name="MM_insert" value="form2">
 </form>
+</div>
+
 <p>&nbsp;</p>
 </body>
 </html>

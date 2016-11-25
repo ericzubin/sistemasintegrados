@@ -82,3 +82,46 @@ INSERT INTO `logentregas` (`IdEntrega`, `Fecha`, `Status`, `Observaciones`, `Nom
 INSERT INTO `logentregas` (`IdEntrega`, `Fecha`, `Status`, `Observaciones`, `NombreReceptor`) VALUES (19, '2016-11-01', '1', 'Lllego bien', 'Eric Zubin');
 
 INSERT INTO `logentregas` (`IdEntrega`, `Fecha`, `Status`, `Observaciones`, `NombreReceptor`) VALUES (20, '2016-11-01', '1', 'Lllego bien', 'Eric Zubin');
+
+
+--Insertar Envios
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (1, '2016-11-08', 1, "Enviar empaquetado", NULL, 1, 1, 1);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (2, '2016-11-09', 1, "enviar Cajar", NULL, 2, 3, 1);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (3, '2016-11-10', 1, "Enviar empaquetado", NULL, 3, 5, 3);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (4, '2016-09-08', 1, "Enviar empaquetado", NULL, 4, 6, 4);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (5, '2016-05-08', 1, "Enviar Cajas Blancas", NULL, 5, 7, 5);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (6, '2016-03-08', 1, "Enviar en Cajas Negras", NULL, 1, 4, 6);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (7, '2016-12-08', 1, "Enviar en Cajas Negras", NULL, 1, 3, 2);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (8, '2016-03-04', 1, "Enviar empaquetado", NULL, 1, 5, 4);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (9, '2016-12-08', 0, "Enviar empaquetado", NULL, 2, 7, 6);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (10, '2016-10-08', 0, "Enviar en Cajas Negras", NULL, 1, 5, 7);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (11, '2016-11-03', 0, "Enviar Cajas Blancas", NULL, 1, 6, 9);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (12, '2016-11-04', 0, "Enviar en Cajas Negras", NULL, 1, 4, 11);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (13, '2016-10-11', 0, "Enviar Cajas Blancas", NULL, 1, 5, 2);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (14, '2016-11-10', 0, "Enviar empaquetado", NULL, 1, 6, 3);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (15, '2016-09-09', 0, "Enviar empaquetado", NULL, 2, 7, 4);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (16, '2016-11-08', 0, "Enviar empaquetado", NULL, 3, 4, 5);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (17, '2016-11-08', 0, "Enviar en Cajas Negras", NULL, 2, 5, 6);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (18, '2016-11-08', 0, "Enviar Cajas Blancas", NULL, 1, 6, 7);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (19, '2016-11-08', 1, "Enviar empaquetado", NULL, 1, 7, 8);
+
+INSERT INTO `logenvios` (`IdEnvio`, `Fecha`, `Status`, `Observaciones`, `DomicilioEntrega`, `IdFormaEnvio`, `IdEntrega`, `IdVenta`) VALUES (20, '2016-11-08', 1, "Enviar Cajas Blancas", NULL, 1, 3, 9);

@@ -1,20 +1,27 @@
 <?php
 
-$idPuesto=$_GET['idPuesto'];
-$Nombre=$_GET['Nombre'];
-$Status=$_GET['Status'];
-$Descripcion=$_GET['Descripcion'];
-$Nivel=$_GET['Nivel'];
-$PersonalRequerido=$_GET['PersonalRequerido'];
+
 
 
 include('conectadb.php');
+
+if ( array_key_exists("InsertarSuministro", $_POST) ) {
+
+$IdSuministro=$_POST['IdSuministro'];
+$Nombre=$_POST['Nombre'];
+$Caracteristicas=$_POST['Caracteristicas'];
+$Estado=$_POST['Estado'];
+$TipoSuministro=$_POST['TipoSuministro'];
+$IdSucursal=$_POST['IdSucursal'];
 $Con=Conectar();
-$Query="INSERT INTO rhpuestos VALUES ('', '$Nombre','$Status','$Descripcion','$Nivel','$PersonalRequerido')";
+$Query="UPDATE invsuministros
+SET Nombre='".$Nombre."',Caracteristicas='".$Caracteristicas."',Estado='".$Estado."',TipoSuministro='".$TipoSuministro."',IdSucursal=".$IdSucursal." WHERE IdSuministro=".$IdSuministro;
+  header("Location: ConsultaInvSuministros.php");
+
 Ejecutar($Query,$Con);
-
-
 Desconectar($Con);
+}
+
 ?>
 
 
@@ -85,7 +92,7 @@ Desconectar($Con);
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
-      <td><input class="btn btn-default" type="submit" value="Insertar Suministro"></td>
+      <td><input class="btn btn-default" type="submit" value="InsertarSuministro" name="InsertarSuministro"></td>
     </tr>
   </table>
   <input type="hidden" name="MM_insert" value="form2">
