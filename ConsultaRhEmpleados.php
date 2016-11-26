@@ -1,5 +1,30 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Consultar Empleados</title>
+
+
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<div align="center">
+                    <h1 class="page-header">ConsultarEmpleados</h1>
+</div>
+<div class="col-lg-2">
 <form name="form1" method="post" action="">
   <p>
+   <div class="form-group">
+      <div class="radio">
     <label>Criterio
     <input name="Criterio" type="text" id="Criterio">
     </label>
@@ -85,13 +110,17 @@ IdDepartamentos
 </label>
 <br>
 
+</div>
+    </div>
+
+</div>
 
 
   </p>
   <p>&nbsp;</p>
   <p>
     <label>
-    <input type="submit" name="Submit" value="Consultar">
+    <input class="btn btn-default" type="submit" name="Submit" value="Consultar">
     </label>
   </p>
 </form>
@@ -106,7 +135,11 @@ $Campo=$_POST['Campo'];
 $Query="SELECT * FROM rhEmpleados where $Campo = '$Criterio'";
 $Consulta=mysqli_query($Con,$Query) or die("Mensaje Error");
 //Tabla
-echo("<table border=1 >");
+echo ("<div align='center' class='panel-body'>
+
+<div  class='table-responsive'>");
+echo("<table border=1 class='table table-striped table-bordered table-hover'>");
+
 echo("<tr>  <td>IdEmpleado</td>  <td>Nombre</td>  <td>Telefono</td>  <td>Direccion </td>    <td>FechaNacimiento </td>
 <td>FechaContratacion </td>    <td>RFC </td>   <td>IMSS </td>  <td>Correo </td> <td>Sexo </td> <td>EstadoCivil </td> </td> <td>CURP </td>
   <td>IdDepartamento </td>   <td>IdPuesto </td> <td>IdNomina </td> <td>IdCuenta </td> <td>IdDepartamentos </td>     <td> </td> <td> </td> </tr>");
@@ -148,6 +181,8 @@ for($a=0; $a < mysqli_num_rows($Consulta) ; $a++)
 	echo ("</tr>");
 	}
 echo("</table>");
+echo ("</div>
+</div>");
 
 }
 ?>

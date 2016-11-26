@@ -37,7 +37,7 @@ if (isset($_GET['pageNum_R18'])) {
 $startRow_R18 = $pageNum_R18 * $maxRows_R18;
 
 mysql_select_db($database_localhost, $localhost);
-$query_R18 = "SELECT * FROM logformasdeenvio";
+$query_R18 = "SELECT * FROM rhdepartamentos";
 $query_limit_R18 = sprintf("%s LIMIT %d, %d", $query_R18, $startRow_R18, $maxRows_R18);
 $R18 = mysql_query($query_limit_R18, $localhost) or die(mysql_error());
 $row_R18 = mysql_fetch_assoc($R18);
@@ -53,24 +53,41 @@ $totalPages_R18 = ceil($totalRows_R18/$maxRows_R18)-1;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
-</head>
+<title>Mostrar Departamentos</title>
 
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
 <body>
+<div align="center">
+                    <h1 class="page-header">Mostrar Departamentos</h1>
+</div>
+<div align="center" class="panel-body">
+
+<div  class="table-responsive">
 <form id="form1" name="form1" method="post" action="">
-  <table border="1">
+  <table border="1" class="table table-striped table-bordered table-hover">
     <tr>
-      <td>IdFormaEnvio</td>
+      <td>IdDepartamentos</td>
       <td>Nombre</td>
+      <td>Localizacion</td>
       <td>Status</td>
-      <td>Observacion</td>
     </tr>
     <?php do { ?>
       <tr>
-        <td><?php echo $row_R18['IdFormaEnvio']; ?></td>
+        <td><?php echo $row_R18['IdDepartamentos']; ?></td>
         <td><?php echo $row_R18['Nombre']; ?></td>
+        <td><?php echo $row_R18['Localizacion']; ?></td>
         <td><?php echo $row_R18['Status']; ?></td>
-        <td><?php echo $row_R18['Observacion']; ?></td>
       </tr>
       <?php } while ($row_R18 = mysql_fetch_assoc($R18)); ?>
   </table>

@@ -7,7 +7,7 @@
 }
  function Ejecutar($Query, $Con)
 {
-	mysqli_query($Con,$Query) or die (mysqli_close($Con));
+	mysqli_query($Con,$Query);
 }
 
  function Desconectar($Con)

@@ -11,10 +11,12 @@ $NombreReceptor=$_POST['NombreReceptor'];
 $Con=Conectar();
 $Query="UPDATE logentregas
 SET Fecha='".$Fecha."',Status='".$Status."',Observaciones='".$Observaciones."',NombreReceptor='".$NombreReceptor."' WHERE IdEntrega=".$IdEntrega;
-  header("Location: ConsultaLogEntregas.php");
 //echo "Se realiza correctamente la actualizacion";
 Ejecutar($Query,$Con);
 Desconectar($Con);
+
+  header("Location: ConsultaLogEntregas.php");
+
 }
 
 ?>

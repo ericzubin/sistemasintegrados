@@ -16,10 +16,12 @@ $IdSucursal=$_POST['IdSucursal'];
 $Con=Conectar();
 $Query="UPDATE invsuministros
 SET Nombre='".$Nombre."',Caracteristicas='".$Caracteristicas."',Estado='".$Estado."',TipoSuministro='".$TipoSuministro."',IdSucursal=".$IdSucursal." WHERE IdSuministro=".$IdSuministro;
-  header("Location: ConsultaInvSuministros.php");
 
 Ejecutar($Query,$Con);
 Desconectar($Con);
+
+  header("Location: ConsultaInvSuministros.php");
+
 }
 
 ?>

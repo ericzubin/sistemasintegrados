@@ -48,10 +48,30 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+<title>Insertar Forma De Envio</title>
+
+
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
+
 <body>
+
+<div align="center">
+                    <h1 class="page-header">Insertar Forma de Envio</h1>
+</div>
+
 <form id="form1" name="form1" method="post" action="">
 </form>
 
@@ -59,23 +79,23 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
   <table align="center">
     <tr valign="baseline">
       <td nowrap align="right">IdFormaEnvio:</td>
-      <td><input type="text" name="IdFormaEnvio" value="" size="32"></td>
+      <td><input class="form-control  type="text" name="IdFormaEnvio" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Nombre:</td>
-      <td><input type="text" name="Nombre" value="" size="32"></td>
+      <td><input class="form-control type="text" name="Nombre" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Status:</td>
-      <td><input type="text" name="Status" value="" size="32"></td>
+      <td><input class="form-control type="text" name="Status" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Observacion:</td>
-      <td><input type="text" name="Observacion" value="" size="32"></td>
+      <td><input class="form-control type="text" name="Observacion" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
-      <td><input type="submit" value="Insert record"></td>
+      <td><input  class="btn btn-default"  type="submit" value="Insert Forma De Envio"></td>
     </tr>
   </table>
   <input type="hidden" name="MM_insert" value="form2">
