@@ -79,19 +79,19 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
   <table align="center">
     <tr valign="baseline">
       <td nowrap align="right">IdDepartamentos:</td>
-      <td><input class="form-control type="text" name="IdDepartamentos" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="IdDepartamentos" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Nombre:</td>
-      <td><input class="form-control type="text" name="Nombre" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Nombre" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Localizacion:</td>
-      <td><input class="form-control type="text" name="Localizacion" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Localizacion" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Status:</td>
-      <td><input class="form-control type="text" name="Status" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Status" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>

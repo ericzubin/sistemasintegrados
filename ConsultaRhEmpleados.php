@@ -170,12 +170,12 @@ for($a=0; $a < mysqli_num_rows($Consulta) ; $a++)
 
 
 
-    echo ("<td> <a href='ActualizarEmpleados.php?Id=".$fila[0]."&Nombre=".$fila[1]."&Telefono="
+    echo ("<td> <a class='btn btn-primary' href='ActualizarEmpleados.php?Id=".$fila[0]."&Nombre=".$fila[1]."&Telefono="
     .$fila[2]."&Direccion=".$fila[3]."&FechaNacimiento=".$fila[4]."&FechaContratacion=".$fila[5]."&RFC=".$fila[6].
     "&IMSS=".$fila[7]."&Correo=".$fila[8]."&Sexo=".$fila[9]."&EstadoCivil=".$fila[10]."&CURP=".$fila[11]
     ."&IdDepartamento=".$fila[12]."&IdPuesto=".$fila[13]."&IdNomina=".$fila[14]."&IdCuenta=".$fila[15]."&IdDepartamentos=".$fila[16]."'> Actualizar</a></td>");
 
-	echo ("<td>  <a href='EliminarEmpleados.php?Id=".$fila[0]."'>Eliminar</a>             </td>");
+	echo ("<td>  <a class='btn btn-danger' href='EliminarEmpleados.php?Id=".$fila[0]."'>Eliminar</a>             </td>");
 
 
 	echo ("</tr>");

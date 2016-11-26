@@ -49,11 +49,30 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+<title>Insertar Puestos</title>
+
+
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
+<div align="center">
+                    <h1 class="page-header">Insertar Puestos</h1>
+</div>
+
 <form id="form1" name="form1" method="post" action="">
 </form>
 
@@ -61,31 +80,31 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
   <table align="center">
     <tr valign="baseline">
       <td nowrap align="right">IdPuesto:</td>
-      <td><input type="text" name="IdPuesto" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="IdPuesto" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Nombre:</td>
-      <td><input type="text" name="Nombre" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Nombre" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Status:</td>
-      <td><input type="text" name="Status" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Status" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Descripcion:</td>
-      <td><input type="text" name="Descripcion" value="" size="32"></td>
+      <td><inputclass="form-control"  type="text" name="Descripcion" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Nivel:</td>
-      <td><input type="text" name="Nivel" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Nivel" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">PersonalRequerido:</td>
-      <td><input type="text" name="PersonalRequerido" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="PersonalRequerido" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
-      <td><input type="submit" value="Insert record"></td>
+      <td><input class="btn btn-default"  type="submit" value="Insert record"></td>
     </tr>
   </table>
   <input type="hidden" name="MM_insert" value="form2">
