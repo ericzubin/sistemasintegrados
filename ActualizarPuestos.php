@@ -45,6 +45,10 @@ header("Location: ConsultaRHPuestos.php");
 </head>
 
 <body>
+
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Actualizar Puestos</h1>
 </div>

@@ -72,6 +72,10 @@ $totalPages_R19 = ceil($totalRows_R19/$maxRows_R19)-1;
 </head>
 
 <body>
+<?php
+     include 'menu.php';
+?>
+
 <div align="center">
                     <h1 class="page-header">Mostrar Empleados</h1>
 </div>

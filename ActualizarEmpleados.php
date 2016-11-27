@@ -59,6 +59,9 @@ Desconectar($Con);
 </head>
 
 <body>
+<?php
+     include 'menu.php';
+?>
 <?php  echo $_GET['IdNomina']; ?>
 <div align="center">
                     <h1 class="page-header">Actualizar Empleado</h1>

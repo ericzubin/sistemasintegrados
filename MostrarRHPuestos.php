@@ -71,6 +71,9 @@ $totalPages_R20 = ceil($totalRows_R20/$maxRows_R20)-1;
 
 
 <body>
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Mostrar Puestos</h1>
 </div>

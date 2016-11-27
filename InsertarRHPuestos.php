@@ -69,6 +69,10 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
 </head>
 
 <body>
+<?php
+     include 'menu.php';
+?>
+
 <div align="center">
                     <h1 class="page-header">Insertar Puestos</h1>
 </div>

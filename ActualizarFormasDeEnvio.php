@@ -42,7 +42,9 @@ header("Location: ConsultaLogFormasDeEnvio.php");
 
 
 <body>
-
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Actualizar Forma de Envio</h1>
 </div>

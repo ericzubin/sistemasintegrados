@@ -82,8 +82,9 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
 </head>
 
 <body>
-<?php include("menuUser.php"); ?>
-
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Insertar Empleado</h1>
                 </div>

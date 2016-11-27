@@ -52,7 +52,9 @@ Desconectar($Con);
 
 
 
-
+<?php
+     include 'menu.php';
+?>
 
 
 

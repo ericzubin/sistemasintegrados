@@ -44,7 +44,9 @@ Desconectar($Con);
 
 <body>
 
-
+<?php
+     include 'menu.php';
+?>
 
 <div align="center">
                     <h1 class="page-header">Actualizar Entrega</h1>

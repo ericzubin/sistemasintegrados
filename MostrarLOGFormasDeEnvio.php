@@ -69,6 +69,9 @@ $totalPages_R18 = ceil($totalRows_R18/$maxRows_R18)-1;
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Mostrar Forma De Envio</h1>
 </div>

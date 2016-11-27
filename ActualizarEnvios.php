@@ -47,7 +47,9 @@ header("Location: ConsultaLogEnvios.php");
 
 </head>
 <body>
-
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Actualizar Envios</h1>
 </div>

@@ -133,25 +133,22 @@ ul, ol {
 
                 <li id="RH"> <a href="">Departamentos</a>
                     <ul>
-                       <li id="RH"> <a href="InsertarRHDepartamentos.php">Insertar</a></li>
-                       <li id="RH"> <a href="EliminarRHDepartamentos.php">Eliminar</a></li>
-                       <li id="RH"> <a href="ActualizarRHDepartamentos.php">Actualizar</a></li>
+                         <li id="RH"> <a href="InsertarRHDepartamentos.php">Insertar</a></li>
+                       <li id="RH"> <a href="ConsultaRhDepartamentos.php">Consultar</a></li>
                        <li id="RH"> <a href="MostrarRHDepartamentos.php">Mostrar</a></li>
                     </ul>
                  </li>
                   <li id="RH"> <a href="">Empleados</a>
                     <ul>
                        <li id="RH"> <a href="InsertarRHEmpleados.php">Insertar</a></li>
-                       <li id="RH"> <a href="EliminarRHEmpleados.php">Eliminar</a></li>
-                       <li id="RH"> <a href="ActualizarRHEmpleados.php">Actualizar</a></li>
+                       <li id="RH"> <a href="ConsultaRhEmpleados.php">Consultar</a></li>
                        <li id="RH"> <a href="MostrarRHEmpleados.php">Mostrar</a></li>
                     </ul>
                  </li>
                   <li id="RH"> <a href="">Puestos</a>
                     <ul>
                        <li id="RH"> <a href="InsertarRHPuestos.php">Insertar</a></li>
-                       <li id="RH"> <a href="EliminarRHPuestos.php">Eliminar</a></li>
-                       <li id="RH"> <a href="ActualizarRHPuestos.php">Actualizar</a></li>
+                       <li id="RH"> <a href="ConsultaRhPuestos.php">Consultar</a></li>
                        <li id="RH"> <a href="MostrarRHPuestos.php">Mostrar</a></li>
                     </ul>
                  </li>
@@ -273,8 +270,7 @@ ul, ol {
               <li id="LOG"> <a href="">Envios</a>
                     <ul>
                        <li id="LOG"> <a href="InsertarLOGEnvios.php">Insertar</a></li>
-                       <li id="LOG"> <a href="EliminarLOGEnvios.php">Eliminar</a></li>
-                       <li id="LOG"> <a href="ActualizarLOGEnvios.php">Actualizar</a></li>
+                       <li id="LOG"> <a href="ConsultaLogEntregas.php">Consultar</a></li>
                        <li id="LOG"> <a href="MostrarLOGEnvios.php">Mostrar</a></li>
                     </ul>
                     
@@ -282,8 +278,7 @@ ul, ol {
               <li id="LOG"> <a href="">Formas De Envio</a>
                     <ul>
                        <li id="LOG"> <a href="InsertarLOGFormasDeEnvio.php">Insertar</a></li>
-                       <li id="LOG"> <a href="EliminarLOGFormasDeEnvio.php">Eliminar</a></li>
-                       <li id="LOG"> <a href="ActualizarLOGFormasDeEnvio.php">Actualizar</a></li>
+                       <li id="LOG"> <a href="ConsultaLogFormasDeEnvio.php">Consultar</a></li>
                        <li id="LOG"> <a href="MostrarLOGFormasDeEnvio.php">Mostrar</a></li>
                     </ul>
                     
