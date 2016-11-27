@@ -1,4 +1,5 @@
 <?php
+
   require_once('funciones/sesiones.php'); 
   validaSesion();
   $TipoUser=obtenerTipoUsuario();
@@ -9,6 +10,7 @@
   {
       header("Location: login.html");
   }
+   
 ?>
 
 
@@ -16,7 +18,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
 <style>
  {
  padding:0px;
@@ -57,7 +58,7 @@ background-color:#DC143C;
 
 #header {
  margin:auto;
- width:1200px;
+ width:50%;
  font-family:arial;
 }
 ul, ol {
@@ -96,6 +97,8 @@ ul, ol {
 </head>
 <body>
       <div id="header">
+                                  <a id="back" href="javascript:history.back(1)"><img src="iconoback.ico" alt="Smiley face" height="5%" width="5%">
+</a>
         <ul class="nav">
           <li id="SYS"><a href="">SYS</a>
           	<ul>
@@ -333,9 +336,8 @@ ul, ol {
               </li>
               <li id="INV"> <a href="">Suministros</a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVSuministros.php">Insertar</a></li>
-                       <li id="INV"> <a href="EliminarINVSuministros.php">Eliminar</a></li>
-                       <li id="INV"> <a href="ActualizarINVSuministros.php">Actualizar</a></li>
+                      <li id="INV"> <a href="InsertarINVSuministros.php">Insertar</a></li>
+                       <li id="INV"> <a href="ConsultaInvSuministros.php">Consultar</a></li>
                        <li id="INV"> <a href="MostrarINVSuministros.php">Mostrar</a></li>
                     </ul>
                     

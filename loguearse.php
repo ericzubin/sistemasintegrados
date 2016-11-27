@@ -2,7 +2,7 @@
 $fusuario=$_POST["usuario"];
 $fpass=$_POST["pass"];
 
-$Conexion = mysqli_connect("localhost", "root", "", "sistemaintegrado2016");
+$Conexion = mysqli_connect("localhost", "root", "", "sistemasintegrados2016");
 $query= mysqli_query($Conexion, "SELECT * FROM syscuentas WHERE IdCuenta= '$fusuario' AND Password ='$fpass'");
 //0 bloqueado 1 activo
 $acceso = mysqli_num_rows($query);
@@ -17,10 +17,13 @@ if($acceso == 1){
 			//Iniciamos la sesion
 			session_start();
 			$_SESSION['fecha_ingreso'] = time();
+			//$hoy = date("Y-m-d H:i:s"); 
+		$query2 = mysqli_query($Conexion, "UPDATE syscuentas SET FechaUltimoAcceso = now() WHERE IdCuenta= '$fusuario'");
+
+			
 			$_SESSION['tipoUser'] = "Admin";
 			header("Location: menuAdmin.php");
 		}else{
-			print("User");
 				//Iniciamos la sesion
 			session_start();
 			$_SESSION['fecha_ingreso'] = time();

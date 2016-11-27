@@ -26,11 +26,11 @@ function sesionActiva() {
 	$_intUltimoAcceso = obtenerUltimoAcceso();
 	/*
 
-	Se establece en segundos cuanto tiempo dura la sesion sin actividad a 10 minutos = 600
+	Se establece en segundos cuanto tiempo dura la sesion sin actividad a 10 minutos = 
 
 	*/
 
-	$_intLimiteUltimoAcceso = $_intUltimoAcceso + 600;
+	$_intLimiteUltimoAcceso = $_intUltimoAcceso + 60*5;
 
 	/*
 

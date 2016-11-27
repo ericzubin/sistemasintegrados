@@ -72,7 +72,9 @@ $totalPages_R15 = ceil($totalRows_R15/$maxRows_R15)-1;
 </head>
 
 <body>
-
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Mostrar Suministro</h1>
 </div>

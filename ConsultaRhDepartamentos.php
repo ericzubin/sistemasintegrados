@@ -17,8 +17,12 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
+<?php
+     include 'menu.php';
+?>
+
 <div align="center">
-                    <h1 class="page-header">Consultar Envios</h1>
+                    <h1 class="page-header">Consultar Departamentos</h1>
 </div>
 <div class="col-lg-2">
 <form name="form1" method="post" action="">

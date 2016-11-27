@@ -17,6 +17,12 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
+
+<?php
+     include 'menu.php';
+?>
+
+
 <div align="center">
                     <h1 class="page-header">Consultar Entregas</h1>
 </div>

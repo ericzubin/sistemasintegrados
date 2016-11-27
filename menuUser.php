@@ -18,7 +18,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
 <style>
  {
  padding:0px;
@@ -54,12 +53,16 @@ background-color:#DDA0DD;
 {
 background-color:#DC143C;
 }
+#back
+{
+   background-color:#;
 
+}
 
 
 #header {
  margin:auto;
- width:1200px;
+ width:50%;
  font-family:arial;
 }
 ul, ol {
@@ -97,11 +100,17 @@ ul, ol {
 </style>
 </head>
 <body>
+      
+
       <div id="header">
+      
+     
+                            <a id="back" href="javascript:history.back(1)"><img src="iconoback.ico" alt="Smiley face" height="5%" width="5%">
+</a>
         <ul class="nav">
+   
           <li id="SYS"><a href="">SYS</a>
           	<ul>
-        
                 <li id="SYS" > <a href="">Permisos</a>
                      <ul>
                        <li id="SYS"> <a href="InsertarSYSPermiso.php">Insertar</a></li>
@@ -256,8 +265,7 @@ ul, ol {
               <li id="LOG"> <a href="">Entregas</a>
                     <ul>
                        <li id="LOG"> <a href="InsertarLOGEntregas.php">Insertar</a></li>
-                       <li id="LOG"> <a href="EliminarLOGEntregas.php">Eliminar</a></li>
-                       <li id="LOG"> <a href="ActualizarLOGEntregas.php">Actualizar</a></li>
+                       <li id="LOG"> <a href="ConsultaLogEntregas.php">Consulta</a></li>
                        <li id="LOG"> <a href="MostrarLOGEntregas.php">Mostrar</a></li>
                     </ul>
                     
@@ -299,7 +307,7 @@ ul, ol {
                     </ul>
                     
               </li>
-                <li id="INV"> <a href="">CAtegorias Productos</a>
+                <li id="INV"> <a href="">Categorias Productos</a>
                     <ul>
                        <li id="INV"> <a href="InsertarINVCategoriasProductos.php">Insertar</a></li>
                        <li id="INV"> <a href="EliminarINVCategoriasProductos.php">Eliminar</a></li>
@@ -329,9 +337,10 @@ ul, ol {
               <li id="INV"> <a href="">Suministros</a>
                     <ul>
                        <li id="INV"> <a href="InsertarINVSuministros.php">Insertar</a></li>
-                       <li id="INV"> <a href="EliminarINVSuministros.php">Eliminar</a></li>
-                       <li id="INV"> <a href="ActualizarINVSuministros.php">Actualizar</a></li>
+                       <li id="INV"> <a href="ConsultaInvSuministros.php">Consultar</a></li>
                        <li id="INV"> <a href="MostrarINVSuministros.php">Mostrar</a></li>
+
+                       
                     </ul>
                     
               </li>
@@ -401,8 +410,11 @@ ul, ol {
 
 
 
-          </li>               
+          </li>    
+            
         </ul>
       </div>
+  
+    
 </body>
 </html>

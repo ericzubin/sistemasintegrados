@@ -18,6 +18,10 @@
 
 </head>
 
+<?php
+     include 'menu.php';
+?>
+
 <div align="center">
                     <h1 class="page-header">Consultar Suministro</h1>
 </div>

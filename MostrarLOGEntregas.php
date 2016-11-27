@@ -70,6 +70,10 @@ $totalPages_R16 = ceil($totalRows_R16/$maxRows_R16)-1;
 </head>
 
 <body>
+<?php
+     include 'menu.php';
+?>
+
 <div align="center">
                     <h1 class="page-header">Mostrar entregas</h1>
 </div>
