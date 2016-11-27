@@ -1,96 +1,119 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Consultar Compras</title>
+
+
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<?php
+     include 'menu.php';
+?>
+
+<div align="center">
+                    <h1 class="page-header">Consultar Compras</h1>
+</div>
+<div class="col-lg-2">
 <form name="form1" method="post" action="">
+  <label>Criterio
+  <input name="Criterio" type="text" id="Criterio">
+  </label>
   <p>
-    <label>Criterio
-    <input name="Criterio" type="text" id="Criterio">
-    </label>
-  </p>
-  <p>
+     <div class="form-group">
+      <div class="radio">
     <label>
     <input type="radio" name="Campo" value="IdCompra">
-    IdCompra</label>
+IdCompra</label>
     <br>
     <label>
-    <input type="radio" name="Campo" value="FechaNombre">
-    Fecha</label>
+    <input type="radio" name="Campo" value="Fecha">
+Fecha</label>
     <br>
     <label>
     <input type="radio" name="Campo" value="Monto">
-    Monto</label>
+Monto</label>
     <br>
     <label>
     <input type="radio" name="Campo" value="NumeroArticulo">
-    Numero Articulo</label>
+NumeroArticulo</label>
     <br>
     <label>
     <input type="radio" name="Campo" value="Status">
-    Status</label>
+Status</label>
     <br>
-        <label>
-    <input type="radio" name="Campo" value="IdProvedor">
-    IdProvedor</label>
-    <br>
-
-       <label>
-    <input type="radio" name="Campo" value="Idegreso">
-    Idegreso</label>
-    <br>
-
-
-           <label>
-    <input type="radio" name="Campo" value="IdMetodoPago">
-    IdMetodoPago</label>
-    <br>
-
-
- 
-
-
-
-
-
-  </p>
-  <p>&nbsp;</p>
-  <p>
     <label>
-    <input type="submit" name="Submit" value="Consultar">
+    <input type="radio" name="Campo" value="IdProveedor">
+IdProveedor</label>
+    <br>
+    <label>
+    <input type="radio" name="Campo" value="IdEgreso">
+IdEgreso</label>
+    <br>
+    <label>
+    <input type="radio" name="Campo" value="IdMetodoPago">
+IdMetodoPago</label>
+    <br>
+     </div>
+    </div>
+
+</div>
+    <input type="submit" class="btn btn-default" name="Submit" value="Consultar">
     </label>
   </p>
+  <p>&nbsp;</p>
 </form>
 <?php
-if (isset($_POST['Criterio'])){
+	if (isset($_POST['Criterio'])){
+		include("ConectaDB.php");
+		$Con = Conectar();
+		$Criterio = $_POST['Criterio'];
+		$Campo = $_POST['Campo'];
+		$Query = "SELECT * FROM comcompras where $Campo = '$Criterio'";
+		$Consulta = mysqli_query($Con, $Query);
+	//Tabla
+echo ("<div align='center' class='panel-body'>
 
+<div  class='table-responsive'>");
+echo("<table border=1 class='table table-striped table-bordered table-hover'>");
 
-include("conectadb.php");
-$Con=Conectar();
-$Criterio=$_POST['Criterio'];
-$Campo=$_POST['Campo'];
-$Query="SELECT * FROM comcompras where $Campo = '$Criterio'";
-$Consulta=mysqli_query($Con,$Query) or die("Mensaje Error");
-//Tabla
-echo("<table border=1 >");
-echo("<tr>  <td>ID Compra</td>  <td>Fecha</td>  <td>Monto</td>  <td>NumeroArticulo </td>    <td>Status </td>   <td>IdProvedor </td>   <td>IdEgreso </td>  <td>IdMetodoPago </td></tr>");
-
-for($a=0; $a < mysqli_num_rows($Consulta) ; $a++)
-	{
-	$fila=mysqli_fetch_row($Consulta);
-	echo ("<tr>");
-	echo ("<td> $fila[0] </td>");
-	echo ("<td> $fila[1] </td>");
-	echo ("<td> $fila[2] </td>");
-	echo ("<td> $fila[3] </td>");
-  echo ("<td> $fila[4] </td>");
-  echo ("<td> $fila[5] </td>");
-  echo ("<td> $fila[6] </td>");
-  echo ("<td> $fila[7] </td>");
-  echo ("<td> <a href='ActualizarCompras.php?Id".$fila[0]."&Fecha=".$fila[1]."&Monto=".$fila[2]."&NumeroArticulo=".$fila[3]."&Status=".$fila[4]."&IdProvedor=".$fila[5]."&IdEgreso=".$fila[6]."&IdMetodoPago=".$fila[7]."'> Actualizar</a></td>");
-  echo ("<td>  <a href='EliminarCompras.php?Id=".$fila[0]."'>Eliminar</a>             </td>");
-	echo ("</tr>");
-
+		echo("<tr> <td> Id </td> <td> Fecha </td> <td> Monto </td> <td> NumeroArticulos </td> <td> Status </td> <td> IdProveedor </td> <td> IdEgreso </td> <td> IdMetodoPago </td> </tr>");
+		for($a=0; $a<mysqli_num_rows($Consulta); $a++){
+			$fila=mysqli_fetch_row($Consulta);
+			echo("<tr>");
+			echo("<td> $fila[0]</td>");
+			echo("<td> $fila[1]</td>");
+			echo("<td> $fila[2]</td>");
+			echo("<td> $fila[3]</td>");
+			echo("<td> $fila[4]</td>");
+			echo("<td> $fila[5]</td>");
+			echo("<td> $fila[6]</td>");
+			echo("<td> $fila[7]</td>");
+			echo("<td> <a class='btn btn-primary' href='ActualizaCOMCompras.php?id=$fila[0]&Fecha=$fila[1]&Monto=$fila[2]&NumeroArticulo=$fila[3]&Status=$fila[4]&IdProveedor=$fila[5]&IdEgreso=$fila[6]&IdMetodoPago=$fila[7]'>Actualizar</a> </td>");
+			echo("<td> <a class='btn btn-danger' href='EliminaCOMCompras.php?id=$fila[0]'>Eliminar</a> </td>");
+			echo("</tr>");
+		}
+		echo("</table>");
+echo ("</div>
+</div>");
+	}
+	function actualiza(){
+		if(isset($_POST['x']) && !empty($_POST['x'])){
+			$accion = $_POST['x'];
+		}
+	}
+	function elimina(){
 	
 	}
-echo("</table>");
-
-}
 ?>
-
-

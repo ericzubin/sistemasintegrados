@@ -175,33 +175,29 @@ ul, ol {
 
                 <li id="COM"> <a href="">Compras</a>
                     <ul>
-                       <li id="COM"> <a href="InsertarCOMCompras.php">Insertar</a></li>
-                       <li id="COM"> <a href="EliminarCOMCompras.php">Eliminar</a></li>
-                       <li id="COM"> <a href="ActualizarCOMCompras.php">Actualizar</a></li>
+                       <li id="COM"> <a href="InsertaCOMCompras.php">Insertar</a></li>
+                       <li id="COM"> <a href="ConsultaCOMCompras.php">Consultar</a></li>
                        <li id="COM"> <a href="MostrarCOMCompras.php">Mostrar</a></li>
                     </ul>
                 </li>
                 <li id="COM"> <a href="">Detalle Compras</a>
                     <ul>
                        <li id="COM"> <a href="InsertarCOMDetalleCompras.php">Insertar</a></li>
-                       <li id="COM"> <a href="EliminarCOMDetalleCompras.php">Eliminar</a></li>
-                       <li id="COM"> <a href="ActualizarCOMDetalleCompras.php">Actualizar</a></li>
+                       <li id="COM"> <a href="ConsultaCOMDetalleCompras.php">Consultar</a></li>
                        <li id="COM"> <a href="MostrarCOMDetalleCompras.php">Mostrar</a></li>
                     </ul>
                 </li>
                 <li id="COM"> <a href="">Pedidos</a>
                     <ul>
                        <li id="COM"> <a href="InsertarCOMPedidos.php">Insertar</a></li>
-                       <li id="COM"> <a href="EliminarCOMPedidos.php">Eliminar</a></li>
-                       <li id="COM"> <a href="ActualizarCOMPedidos.php">Actualizar</a></li>
+                       <li id="COM"> <a href="ConsultaCOMPedidos.php">Consultar</a></li>
                        <li id="COM"> <a href="MostrarCOMPedidos.php">Mostrar</a></li>
                     </ul>
                 </li>
                 <li id="COM"> <a href="">Proveedores</a>
                     <ul>
-                       <li id="COM"> <a href="InsertarCOMProveedores.php">Insertar</a></li>
-                       <li id="COM"> <a href="EliminarCOMProveedores.php">Eliminar</a></li>
-                       <li id="COM"> <a href="ActualizarCOMProveedores.php">Actualizar</a></li>
+                   <li id="COM"> <a href="InsertaCOMProveedores.php">Insertar</a></li>
+                       <li id="COM"> <a href="ConsultaCOMProveedores.php">Consultar</a></li>
                        <li id="COM"> <a href="MostrarCOMProveedores.php">Mostrar</a></li>
                     </ul>
                 </li>
@@ -346,28 +342,25 @@ ul, ol {
 
             <li id="FIN"><a href="">FIN</a>
                 <ul>
-                  <li id="FIN"> <a href="">CuentasPorPagar</a>
+                  <li id="FIN"> <a href="">Cuentas Por Pagar</a>
                     <ul>
-                       <li id="FIN"> <a href="InsertarSYSCuentasPorPagar.php">Insertar</a></li>
-                       <li id="FIN"> <a href="EliminarSYSCuentasPorPagar.php">Eliminar</a></li>
-                       <li id="FIN"> <a href="ActualizarSYSCuentasPorPagar.php">Actualizar</a></li>
-                       <li id="FIN"> <a href="MostrarSYSCuentasPorPagar.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertaFINCuentasPorPagar.php">Insertar</a></li>
+                       <li id="FIN"> <a href="ConsultaFINCuentasPorPagar.php">Consultar</a></li>
+                       <li id="FIN"> <a href="MostrarFINCuentasPorPagar.php">Mostrar</a></li>
                     </ul>
                    </li>
                 <li id="FIN"> <a href="">Cuentas Por Cobrar</a>
                     <ul>
-                       <li id="FIN"> <a href="InsertarSYSCuentasPorCobrar.php">Insertar</a></li>
-                       <li id="FIN"> <a href="EliminarSYSCuentasPorCobrar.php">Eliminar</a></li>
-                       <li id="FIN"> <a href="ActualizarSYSCuentasPorCobrar.php">Actualizar</a></li>
-                       <li id="FIN"> <a href="MostrarSYSCuentasPorCobrar.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertaFINCuentasPorCobrar.php">Insertar</a></li>
+                       <li id="FIN"> <a href="ConsultaFINCuentasPorCobrar.php">Consultar</a></li>
+                       <li id="FIN"> <a href="MostrarFINCuentasPorCobrar.php">Mostrar</a></li>
                     </ul>
                    </li>  
                    <li id="FIN" > <a href="">Egresos</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertarSYSEgresos.php">Insertar</a></li>
-                       <li id="FIN"> <a href="EliminarSYSEgresos.php">Eliminar</a></li>
-                       <li id="FIN"> <a href="ActualizarSYSEgresos.php">Actualizar</a></li>
-                       <li id="FIN"> <a href="MostrarSYSEgresos.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertaFINEgresos.php">Insertar</a></li>
+                       <li id="FIN"> <a href="ConsultaFINEgresos.php">Consultar</a></li>
+                       <li id="FIN"> <a href="MostrarFINEgresos.php">Mostrar</a></li>
                     </ul>                
                  </li>
                     <li id="FIN" > <a href="">Formas De Pago</a>

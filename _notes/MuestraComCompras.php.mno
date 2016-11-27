@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_MuestraComCompras" value="name:IdCompra;datatype:int,name:Fecha;datatype:date,name:Monto;datatype:real,name:NumeroArticulo;datatype:int,name:Status;datatype:int,name:IdProveedor;datatype:int,name:IdEgreso;datatype:int,name:IdMetodoPago;datatype:int" />
-	<infoitem key="UD_RS1" value="name:IdCompra;datatype:int,name:Fecha;datatype:date,name:Monto;datatype:real,name:NumeroArticulo;datatype:int,name:Status;datatype:int,name:IdProveedor;datatype:int,name:IdEgreso;datatype:int,name:IdMetodoPago;datatype:int" />
-</info>
