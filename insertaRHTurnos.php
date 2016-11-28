@@ -1,28 +1,31 @@
 <?php
-$idPuesto=$_POST['idSurcusal'];
+if ( array_key_exists("Insertar", $_POST) ) {
+$IdTurno=$_POST['IdTurno'];
 $Nombre=$_POST['Nombre'];
-$localizacion=$_POST['localizacion'];
+$HoraEntrada=$_POST['HoraEntrada'];
+$HoraSalida=$_POST['HoraSalida'];
+$DiasLaborales=$_POST['DiasLaborales'];
+$TipoJornada=$_POST['TipoJornada'];
 $Status=$_POST['Status'];
-$Telefono=$_POST['Telefono'];
-$DomicilioFiscal=$_POST['DomicilioFiscal'];
 
 
 include('conectadb.php');
 $Con=Conectar();
-$Query="INSERT INTO rhsucursales VALUES ('', '$Nombre','$localizacion','$Status','$Telefono','$DomicilioFiscal')";
+$Query="INSERT INTO rhturnos VALUES (NULL, '$Nombre','$HoraEntrada','$HoraSalida','$DiasLaborales','$TipoJornada','$Status')";
 Ejecutar($Query,$Con);
 
 
 Desconectar($Con);
+}
 ?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Insertar Suministro</title>
+<title>Insertar Turno</title>
 
  <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,10 +43,12 @@ Desconectar($Con);
 <body>
 
 
-
+<?php
+     include 'menu.php';
+?>
 
 <div align="center">
-                    <h1 class="page-header">Insertar Sucursal</h1>
+                    <h1 class="page-header">Insertar Turno</h1>
 </div>
 
 
@@ -53,7 +58,7 @@ Desconectar($Con);
  <form method="post" name="form2" action="<?php echo $editFormAction; ?>">
    <table align="center">
     <tr valign="baseline">
-      <td nowrap align="right">IdSucursal:</td>
+      <td nowrap align="right">IdSuministro:</td>
       
       <td><input class="form-control" type="text" name="IdSuministro" value="" size="32"></td>
     </tr>
@@ -63,31 +68,37 @@ Desconectar($Con);
       <td><input class="form-control" type="text" name="Nombre" value="" size="32"></td>
     </tr>
      <tr valign="baseline">
-       <td nowrap align="right">Localizacion:</td>
+       <td nowrap align="right">HoraEntrada:</td>
       
-      <td><input  class="form-control" type="text" name="Caracteristicas" value="" size="32"></td>
+      <td><input  class="form-control" type="text" name="HoraEntrada" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Status:</td>
+      <td nowrap align="right">HoraSalida:</td>
       
-      <td><input class="form-control" type="text" name="Estado" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="HoraSalida" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       
       
-      <td nowrap align="right">Telefono:</td>
-      <td><input class="form-control" type="text" name="TipoSuministro" value="" size="32"></td>
+      <td nowrap align="right">DiasLaborales:</td>
+      <td><input class="form-control" type="text" name="DiasLaborales" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
      
       
-      <td nowrap align="right">Domicilio Fiscal:</td>
-      <td><input class="form-control" type="text" name="IdSucursal" value="" size="32"></td>
+      <td nowrap align="right">TipoJornada:</td>
+      <td><input class="form-control" type="text" name="TipoJornada" value="" size="32"></td>
      </tr>
+
+       
+      <td nowrap align="right">Status::</td>
+      <td><input class="form-control" type="text" name="Status" value="" size="32"></td>
+     </tr>
+
      <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
       
-      <td><input class="btn btn-default" type="submit" value="Insertar Suministro"></td>
+      <td><input class="btn btn-default" type="submit" value="Insertar" name="Insertar"></td>
      </tr>
    </table>
    <input type="hidden" name="MM_insert" value="form2">

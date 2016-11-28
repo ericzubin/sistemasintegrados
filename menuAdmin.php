@@ -104,26 +104,23 @@ ul, ol {
           	<ul>
             	<li id="SYS"> <a href="">Cuentas</a>
                 	  <ul>
-                       <li id="SYS"> <a href="insertarSYSCuentas.php">Insertar</a></li>
-                       <li id="SYS"> <a href="EliminarSYSCuentas.php">Eliminar</a></li>
-                       <li id="SYS"> <a href="ActualizarSYSCuentas.php">Actualizar</a></li>
-                       <li id="SYS"> <a href="MostrarSYSCuentas.php">Mostrar</a></li>
+                       <li id="SYS"> <a href="insertCuentas.php">Insertar</a></li>
+                       <li id="SYS"> <a href="ConsultaSysCuentas.php">Consultar</a></li>
+                       <li id="SYS"> <a href="MuestraSysCuentas.php">Mostrar</a></li>
                     </ul>
                  </li>
                 <li id="SYS" > <a href="">Permisos</a>
                      <ul>
-                       <li id="SYS"> <a href="insertarSYSPermiso.php">Insertar</a></li>
-                       <li id="SYS"> <a href="EliminarSYSPermiso.php">Eliminar</a></li>
-                       <li id="SYS"> <a href="ActualizarSYSPermiso.php">Actualizar</a></li>
-                       <li id="SYS"> <a href="MostrarSYSPermiso.php">Mostrar</a></li>
+                       <li id="SYS"> <a href="insertPerrmisos.php">Insertar</a></li>
+                       <li id="SYS"> <a href="ConsultaSysPermisos.php">Consulta</a></li>
+                       <li id="SYS"> <a href="MuestraSysPermisos.php">Mostrar</a></li>
                     </ul>                
                  </li>   
                    <li id="SYS" > <a href="">Tipos Cuentas</a>
                      <ul>
-                       <li id="SYS"> <a href="InsertarSYTiposCuentas.php">Insertar</a></li>
-                       <li id="SYS"> <a href="EliminarSYTiposCuentas.php">Eliminar</a></li>
-                       <li id="SYS"> <a href="ActualizarSYTiposCuentas.php">Actualizar</a></li>
-                       <li id="SYS"> <a href="MostrarSYTiposCuentas.php">Mostrar</a></li>
+                       <li id="SYS"> <a href="insertTiposCuentas.php">Insertar</a></li>
+                       <li id="SYS"> <a href="ConsultaSysTiposCuentas.php">Consulta</a></li>
+                       <li id="SYS"> <a href="MuestraSysTiposCuentas.php">Mostrar</a></li>
                     </ul>                
                  </li>     
             </ul>
@@ -154,17 +151,15 @@ ul, ol {
                  </li>
                   <li id="RH"> <a href="">Surcusales</a>
                     <ul>
-                       <li id="RH"> <a href="InsertarRHSurcusales.php">Insertar</a></li>
-                       <li id="RH"> <a href="EliminarRHSurcusales.php">Eliminar</a></li>
-                       <li id="RH"> <a href="ActualizarRHSurcusales.php">Actualizar</a></li>
-                       <li id="RH"> <a href="MostrarRHSurcusales.php">Mostrar</a></li>
+                       <li id="RH"> <a href="insertaRHSurcusales.php">Insertar</a></li>
+                       <li id="RH"> <a href="ConsultaRhSurcusales.php">Consultar</a></li>
+                       <li id="RH"> <a href="MuestraRhSurcusales.php">Mostrar</a></li>
                     </ul>
                  </li>
                   <li id="RH"> <a href="">Turnos</a>
                     <ul>
-                       <li id="RH"> <a href="InsertarRHTurnos.php">Insertar</a></li>
-                       <li id="RH"> <a href="EliminarRHTurnos.php">Eliminar</a></li>
-                       <li id="RH"> <a href="ActualizarRHTurnos.php">Actualizar</a></li>
+                       <li id="RH"> <a href="insertaRHTurnos.php">Insertar</a></li>
+                       <li id="RH"> <a href="ActualizarRHTurnos.php">Consular</a></li>
                        <li id="RH"> <a href="MostrarRHTurnos.php">Mostrar</a></li>
                     </ul>
                  </li>
@@ -212,36 +207,32 @@ ul, ol {
 
                  <li id="VEN"> <a href="">Clientes</a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENClientes.php">Insertar</a></li>
-                       <li id="VEN"> <a href="EliminarVENClientes.php">Eliminar</a></li>
-                       <li id="VEN"> <a href="ActualizarVENClientes.php">Actualizar</a></li>
-                       <li id="VEN"> <a href="MostrarVENClientes.php">Mostrar</a></li>
+                       <li id="VEN"> <a href="insertClientes.php">Insertar</a></li>
+                       <li id="VEN"> <a href="ConsultaVenClientes.php">Consulta</a></li>
+                       <li id="VEN"> <a href="MuestraVenClientes.php">Mostrar</a></li>
                     </ul>
 
               </li>
               <li id="VEN"> <a href="">Detalle Ventas</a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENDetalleVentas.php">Insertar</a></li>
-                       <li id="VEN"> <a href="EliminarVENDetalleVentas.php">Eliminar</a></li>
-                       <li id="VEN"> <a href="ActualizarVENDetalleVentas.php">Actualizar</a></li>
-                       <li id="VEN"> <a href="MostrarVENDetalleVentas.php">Mostrar</a></li>
+                        <li id="VEN"> <a href="insertDetalleVentas.php">Insertar</a></li>
+                       <li id="VEN"> <a href="ConsultaVenDetalleVentas.php">Consulta</a></li>
+                       <li id="VEN"> <a href="MuestraVenDetalleVentas.php">Mostrar</a></li>
                     </ul>
                     
               </li>
               <li id="VEN"> <a href="">Devoluciones</a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENDevoluciones.php">Insertar</a></li>
-                       <li id="VEN"> <a href="EliminarVENDevoluciones.php">Eliminar</a></li>
-                       <li id="VEN"> <a href="ActualizarVENDevoluciones.php">Actualizar</a></li>
-                       <li id="VEN"> <a href="MostrarVENDevoluciones.php">Mostrar</a></li>
+                       <li id="VEN"> <a href="insertaVENDevoluciones.php">Insertar</a></li>
+                       <li id="VEN"> <a href="ConsultaVenDevoluciones.php">Consulta</a></li>
+                       <li id="VEN"> <a href="MuestraVenDevoluciones.php">Mostrar</a></li>
                     </ul>
                     
               </li>
                  <li id="VEN"> <a href="">Ventas</a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENVentas.php">Insertar</a></li>
-                       <li id="VEN"> <a href="EliminarVENVentas.php">Eliminar</a></li>
-                       <li id="VEN"> <a href="ActualizarVENVentas.php">Actualizar</a></li>
+                       <li id="VEN"> <a href="insertVentas.php">Insertar</a></li>
+                       <li id="VEN"> <a href="EliminarVENVentas.php">Consulta</a></li>
                        <li id="VEN"> <a href="MostrarVENVentas.php">Mostrar</a></li>
                     </ul>
                     
@@ -257,8 +248,7 @@ ul, ol {
               <li id="LOG"> <a href="">Entregas</a>
                     <ul>
                        <li id="LOG"> <a href="InsertarLOGEntregas.php">Insertar</a></li>
-                       <li id="LOG"> <a href="EliminarLOGEntregas.php">Eliminar</a></li>
-                       <li id="LOG"> <a href="ActualizarLOGEntregas.php">Actualizar</a></li>
+                       <li id="LOG"> <a href="ConsultaLogEntregas.php">Consulta</a></li>
                        <li id="LOG"> <a href="MostrarLOGEntregas.php">Mostrar</a></li>
                     </ul>
                     
@@ -291,37 +281,33 @@ ul, ol {
           <ul>
             <li id="INV"> <a href="">Activos Fijos</a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVActivosFijos.php">Insertar</a></li>
-                       <li id="INV"> <a href="EliminarINVActivosFijos.php">Eliminar</a></li>
-                       <li id="INV"> <a href="ActualizarINVActivosFijos.php">Actualizar</a></li>
-                       <li id="INV"> <a href="MostrarINVActivosFijos.php">Mostrar</a></li>
+                      <li id="INV"> <a href="InsertarInactivosfijos.php">Insertar</a></li>
+                       <li id="INV"> <a href="ConsultaInvActivosFijos.php">Consultar</a></li>
+                       <li id="INV"> <a href="Mostrarinactivosfijos.php">Mostrar</a></li>
                     </ul>
                     
               </li>
-                <li id="INV"> <a href="">CAtegorias Productos</a>
+                <li id="INV"> <a href="">Categorias Productos</a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVCategoriasProductos.php">Insertar</a></li>
-                       <li id="INV"> <a href="EliminarINVCategoriasProductos.php">Eliminar</a></li>
-                       <li id="INV"> <a href="ActualizarINVCategoriasProductos.php">Actualizar</a></li>
+                        <li id="INV"> <a href="InsertarINVCategoriasProductos.php">Insertar</a></li>
+                       <li id="INV"> <a href="ConsultaInvCategoriasProductos.php">Consultar</a></li>
                        <li id="INV"> <a href="MostrarINVCategoriasProductos.php">Mostrar</a></li>
                     </ul>
                     
               </li>
                 <li id="INV"> <a href="">Nominas</a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVNominas.php">Insertar</a></li>
-                       <li id="INV"> <a href="EliminarINVNominas.php">Eliminar</a></li>
-                       <li id="INV"> <a href="ActualizarINVNominas.php">Actualizar</a></li>
-                       <li id="INV"> <a href="MostrarINVNominas.php">Mostrar</a></li>
+                        <li id="INV"> <a href="InsertarINVNominas.php">Insertar</a></li>
+                       <li id="INV"> <a href="ConsultaInvNominas.php">Consultar</a></li>
+                       <li id="INV"> <a href="Mostrarinvnominas.php">Mostrar</a></li>
                     </ul>
                     
               </li>
                <li id="INV"> <a href="">Productos</a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVProductos.php">Insertar</a></li>
-                       <li id="INV"> <a href="EliminarINVProductos.php">Eliminar</a></li>
-                       <li id="INV"> <a href="ActualizarINVProductos.php">Actualizar</a></li>
-                       <li id="INV"> <a href="MostrarINVProductos.php">Mostrar</a></li>
+                        <li id="INV"> <a href="InsertarINVProductos.php">Insertar</a></li>
+                       <li id="INV"> <a href="ConsultaInvProductos.php">Consultar</a></li>
+                       <li id="INV"> <a href="Mostrarinproductos.php">Mostrar</a></li>
                     </ul>
                     
               </li>
@@ -365,26 +351,23 @@ ul, ol {
                  </li>
                     <li id="FIN" > <a href="">Formas De Pago</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertarSYSFormasDePago.php">Insertar</a></li>
-                       <li id="FIN"> <a href="EliminarSYSFormasDePago.php">Eliminar</a></li>
-                       <li id="FIN"> <a href="ActualizarSYSFormasDePago.php">Actualizar</a></li>
-                       <li id="FIN"> <a href="MostrarSYSFormasDePago.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertarFinformasdepago.php">Insertar</a></li>
+                       <li id="FIN"> <a href="ConsultaFinFormasDePago.php">Consultar</a></li>
+                       <li id="FIN"> <a href="Mostrarfinformasdepago.php">Mostrar</a></li>
                     </ul>                
                  </li> 
                     <li id="FIN" > <a href="">Ingresos</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertarSYSINgresos.php">Insertar</a></li>
-                       <li id="FIN"> <a href="EliminarSYSINgresos.php">Eliminar</a></li>
-                       <li id="FIN"> <a href="ActualizarSYSINgresos.php">Actualizar</a></li>
-                       <li id="FIN"> <a href="MostrarSYSINgresos.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertarFiningresos.php">Insertar</a></li>
+                       <li id="FIN"> <a href="ConsultaFinIngresos.php">Consultar</a></li>
+                       <li id="FIN"> <a href="Mostrarfiningresos.php">Mostrar</a></li>
                     </ul>                
                  </li>  
                          <li id="FIN" > <a href="">Metodo De Pago</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertarSYSMetodoDePago.php">Insertar</a></li>
-                       <li id="FIN"> <a href="EliminarSYSMetodoDePago.php">Eliminar</a></li>
-                       <li id="FIN"> <a href="ActualizarSYSMetodoDePago.php">Actualizar</a></li>
-                       <li id="FIN"> <a href="MostrarSYSMetodoDePago.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertarFinmetodosdepago.php">Insertar</a></li>
+                       <li id="FIN"> <a href="ConsultaFinMetodosDePago.php">Consultar</a></li>
+                       <li id="FIN"> <a href="Mostrarfinformasdepago.php">Mostrar</a></li>
                     </ul>                
                  </li>        
             </ul>

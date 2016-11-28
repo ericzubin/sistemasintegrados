@@ -49,6 +49,9 @@ header("Location: ConsultaCOMProveedores.php");
 
 
 
+<?php
+     include 'menu.php';
+?>
 
 
 

@@ -76,7 +76,6 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
                     <h1 class="page-header">Insertar Entrega</h1>
 </div>
 
-                        <div class="">
 
 <form id="form1" role="" name="form1" method="post" action="">
 </form>
@@ -85,23 +84,23 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
   <table align="center">
     <tr valign="baseline">
       <td nowrap align="right">IdEntrega:</td>
-      <td><input class="form-control  type="text" name="IdEntrega" value="" size="32"></td>
+      <td><input class="form-control"  type="text" name="IdEntrega" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Fecha:</td>
-      <td><input class="form-control type="data" name="Fecha" value="" size="32"></td>
+      <td><input class="form-control" type="data" name="Fecha" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Status:</td>
-      <td><input class="form-control type="text" name="Status" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Status" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Observaciones:</td>
-      <td><input class="form-control type="text" name="Observaciones" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Observaciones" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">NombreReceptor:</td>
-      <td><input class="form-control type="text" name="NombreReceptor" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="NombreReceptor" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>

@@ -21,7 +21,7 @@ $Query="UPDATE logenvios
 SET Fecha='".$Fecha."',Status=".$Status.",Observaciones='".$Observaciones."',DomicilioEntrega='".$DomicilioEntrega."',IdFormaEnvio=".$IdFormaEnvio."IdEntrega=".$IdEntrega."IdVenta=".$IdVenta." WHERE IdEnvio=".$IdEnvio;
 
 Ejecutar($Query,$Con);
-header("Location: ConsultaLogEnvios.php");
+header("Location: ConsultaSysTiposCuentas.php");
 }
 
 ?>

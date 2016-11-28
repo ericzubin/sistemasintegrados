@@ -23,7 +23,7 @@ header("Location: ConsultaCOMPedidos.php");
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Actualizar Compras</title>
+<title>Actualizar Pedidos</title>
 
  <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,11 +46,14 @@ header("Location: ConsultaCOMPedidos.php");
 
 
 
+<?php
+     include 'menu.php';
+?>
 
 
 
 <div align="center">
-                    <h1 class="page-header">Actualizar Compras</h1>
+                    <h1 class="page-header">Actualizar Pedidos</h1>
 </div>
 
 

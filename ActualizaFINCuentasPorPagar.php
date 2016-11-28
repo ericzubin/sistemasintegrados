@@ -47,6 +47,10 @@ header("Location: ConsultaFINCuentasPorPagar.php");
 
 
 
+<?php
+     include 'menu.php';
+?>
+
 
 
 

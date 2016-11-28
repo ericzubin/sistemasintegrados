@@ -71,7 +71,7 @@
   <p>&nbsp;</p>
   <p>
     <label>
-    <input type="submit" name="Submit" value="Consultar">
+    <input type="submit" class="btn btn-default" name="Submit" value="Consultar">
     </label>
   </p>
 </form>

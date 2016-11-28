@@ -17,17 +17,22 @@ if($acceso == 1){
 			//Iniciamos la sesion
 			session_start();
 			$_SESSION['fecha_ingreso'] = time();
-			//$hoy = date("Y-m-d H:i:s"); 
+			$_SESSION['idioma'] = "es";
+
 		$query2 = mysqli_query($Conexion, "UPDATE syscuentas SET FechaUltimoAcceso = now() WHERE IdCuenta= '$fusuario'");
 
-			
+			$_SESSION['fecha_ingreso'] = time();
 			$_SESSION['tipoUser'] = "Admin";
+
 			header("Location: menuAdmin.php");
 		}else{
 				//Iniciamos la sesion
 			session_start();
 			$_SESSION['fecha_ingreso'] = time();
 			$_SESSION['tipoUser'] = "User";
+			$_SESSION['idioma'] = "es";
+
+
 			header("Location: menuUser.php");
 		}
 	}else{

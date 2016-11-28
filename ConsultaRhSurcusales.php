@@ -17,12 +17,17 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
+<?php
+     include 'menu.php';
+?>
 <div align="center">
                     <h1 class="page-header">Consultar Sucursales</h1>
 </div>
 <div class="col-lg-2">
 <form name="form1" method="post" action="">
   <p>
+     <div class="form-group">
+      <div class="radio">
     <label>Criterio
     <input name="Criterio" class="form-control" type="text" id="Criterio">
     </label>
@@ -54,11 +59,15 @@
     DomicilioFiscal</label>
     <br>
 
+</div>
+    </div>
+
+</div>
   </p>
   <p>&nbsp;</p>
   <p>
     <label>
-    <input type="submit" name="Submit" value="Consultar">
+    <input class="btn btn-default" type="submit" name="Submit" value="Consultar">
     </label>
   </p>
 </form>

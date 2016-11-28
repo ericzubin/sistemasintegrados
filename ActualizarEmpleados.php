@@ -18,20 +18,27 @@ $CURP=$_POST['CURP'];
 $IdDepartamento=$_POST['IdDepartamento'];
 $IdPuesto=$_POST['IdPuesto'];
 $IdNomina=$_POST['IdNomina'];
-$IdDepartamentos=$_POST['IdDepartamentos'];
-$IdNomina=$_POST['IdCuenta'];
-$IdPuesto=$_POST['IdPuesto'];
-$CURP=$_POST['CURP'];
 $IdTurno=$_POST['IdTurno'];
 
 $Con=Conectar();
-$Query="UPDATE logentregas
-SET Fecha='".$Fecha."',Status='".$Status."',Observaciones='".$Observaciones."',NombreReceptor='".$NombreReceptor."' WHERE IdEmpleado=".$IdEmpleado;
+$Query="UPDATE rhempleados
+SET Nombre='".$Nombre."',Telefono='".$Telefono."',Direccion='".$Direccion."',FechaNacimiento='".$FechaNacimiento.
+"',FechaContratacion='".$FechaContratacion.
+"',RFC='".$RFC.
+"',Correo='".$Correo.
+"',Sexo='".$Sexo.
+"',EstadoCivil='".$EstadoCivil.
+"',CURP='".$CURP.
+"',IdDepartamento='".$IdDepartamento.
+"',IdNomina='".$IdNomina.
+"',IdPuesto='".$IdPuesto.
+"',IdTurno='".$IdTurno.
+"' WHERE IdEmpleado=".$IdEmpleado;
 //echo "Se realiza correctamente la actualizacion";
 Ejecutar($Query,$Con);
 Desconectar($Con);
 
-  header("Location: ConsultaLogEntregas.php");
+  header("Location: ConsultaEmpleados.php");
 
 }
 

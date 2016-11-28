@@ -50,6 +50,11 @@ header("Location: ConsultaFINCuentasPorCobrar.php");
 
 
 
+<?php
+     include 'menu.php';
+?>
+
+
 
 
 <div align="center">

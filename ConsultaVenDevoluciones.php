@@ -1,7 +1,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Consultar Suministros</title>
+<title>Consultar Devoluciones</title>
 
 
  <!-- Bootstrap Core CSS -->
@@ -17,12 +17,18 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
+<?php
+     include 'menu.php';
+?>
+
 <div align="center">
-                    <h1 class="page-header">Consultar Sucursales</h1>
+                    <h1 class="page-header">Consultar Devoluciones</h1>
 </div>
 <div class="col-lg-2">
 <form name="form1" method="post" action="">
   <p>
+     <div class="form-group">
+      <div class="radio">
     <label>Criterio
     <input name="Criterio" class="form-control" type="text" id="Criterio">
     </label>
@@ -53,12 +59,15 @@
     <input type="radio" name="Campo" value="DomicilioFiscal">
     DomicilioFiscal</label>
     <br>
+</div>
+    </div>
 
+</div>
   </p>
   <p>&nbsp;</p>
   <p>
     <label>
-    <input type="submit" name="Submit" value="Consultar">
+    <input type="submit" class="btn btn-default" name="Submit" value="Consultar">
     </label>
   </p>
 </form>
@@ -73,9 +82,11 @@ $Campo=$_POST['Campo'];
 $Query="SELECT * FROM rhsucursales where $Campo = '$Criterio'";
 $Consulta=mysqli_query($Con,$Query) or die("Mensaje Error");
 //Tabla
-echo("<table border=1 >");
-echo ("<div align='center' class='panel-body'><div  class='table-responsive'>");
+echo ("<div align='center' class='panel-body'>
+
+<div  class='table-responsive'>");
 echo("<table border=1 class='table table-striped table-bordered table-hover'>");
+
 echo("<tr>  <td>ID Sucursal</td>  <td>Nombre</td>  <td>Localizacion</td>  <td>Status </td>    <td>Telefono </td>   <td>Domicilio Fiscal </td> </tr>");
 
 for($a=0; $a < mysqli_num_rows($Consulta) ; $a++)

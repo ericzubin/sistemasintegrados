@@ -1,28 +1,37 @@
 <?php
 
-$idPuesto=$_GET['idPuesto'];
-$Nombre=$_GET['Nombre'];
-$Status=$_GET['Status'];
-$Descripcion=$_GET['Descripcion'];
-$Nivel=$_GET['Nivel'];
-$PersonalRequerido=$_GET['PersonalRequerido'];
+
 
 
 include('conectadb.php');
-$Con=Conectar();
-$Query="INSERT INTO rhpuestos VALUES ('', '$Nombre','$Status','$Descripcion','$Nivel','$PersonalRequerido')";
-Ejecutar($Query,$Con);
 
-Desconectar($Con);
+if ( array_key_exists("ActualizarEnvio", $_POST) ) {
+
+$IdEnvio=$_POST['IdEnvio'];
+$Fecha=$_POST['Fecha'];
+$Status=$_POST['Status'];
+$Observaciones=$_POST['Observaciones'];
+$DomicilioEntrega=$_POST['DomicilioEntrega'];
+$IdFormaEnvio=$_POST['IdFormaEnvio'];
+$IdEntrega=$_POST['IdEntrega'];
+$IdVenta=$_POST['IdVenta'];
+
+$Con=Conectar();
+$Query="UPDATE logenvios
+SET Fecha='".$Fecha."',Status=".$Status.",Observaciones='".$Observaciones."',DomicilioEntrega='".$DomicilioEntrega."',IdFormaEnvio=".$IdFormaEnvio."IdEntrega=".$IdEntrega."IdVenta=".$IdVenta." WHERE IdEnvio=".$IdEnvio;
+
+Ejecutar($Query,$Con);
+header("Location: ConsultaLogEnvios.php");
+}
+
 ?>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Actualizar Envios</title>
 
-<title>Insertar Suministro</title>
 
  <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,23 +44,15 @@ Desconectar($Con);
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
-
 <body>
-
-
-
-
-
-
-
-
-
-
+<?php
+     include 'menu.php';
+?>
 <div align="center">
-                    <h1 class="page-header">Actualizar Tipos de Cuentas</h1>
+                    <h1 class="page-header">Actualizar Envios</h1>
 </div>
-
 
 <form id="form1" name="form1" method="post" action="">
 </form>
@@ -59,39 +60,44 @@ Desconectar($Con);
 <form method="post" name="form2" action="">
   <table align="center">
     <tr valign="baseline">
-      <td nowrap align="right">IdSucursales:</td>
-      <td><input class="form-control" type="text" name="IdSuministro" value="<?php echo $_GET['Id']; ?>" size="32"></td>
+      <td nowrap align="right">IdEnvio:</td>
+      <td><input class="form-control  type="text" name="IdEnvio" value="<?php echo $_GET['Id']; ?>" size="32"></td>
     </tr>
     <tr valign="baseline">
-     <td nowrap align="right">Nombre:</td>
-     <td><input class="form-control" type="text" name="Nombre" value="<?php echo $_GET['Nombre']; ?>" size="32"></td>
-   </tr>
-    <tr valign="baseline">
-      <td nowrap align="right">Caracteristicas:</td>
-      <td><input  class="form-control" type="text" name="Caracteristicas" value="<?php echo $_GET['Caracteristicas']; ?>" size="32"></td>
+      <td nowrap align="right">Fecha:</td>
+      <td><input class="form-control  type="text" name="Fecha" value="<?php echo $_GET['Fecha']; ?>" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Estado:</td>
-      <td><input class="form-control" type="text" name="Estado" value="<?php echo $_GET['Estado']; ?>" size="32"></td>
+      <td nowrap align="right">Status:</td>
+      <td><input class="form-control  type="text" name="Status" value="<?php echo $_GET['Status']; ?>" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Tipo Suministro:</td>
-      <td><input class="form-control" type="text" name="TipoSuministro" value="<?php echo $_GET['TipoSuministro']; ?>" size="32"></td>
+      <td nowrap align="right">Observaciones:</td>
+      <td><input class="form-control  type="text" name="Observaciones" value="<?php echo $_GET['Observaciones']; ?>" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Id Sucursal:</td>
-      <td><input class="form-control" type="text" name="IdSucursal" value="<?php echo $_GET['IdSucursal']; ?>" size="32"></td>
+      <td nowrap align="right">DomicilioEntrega:</td>
+      <td><input class="form-control  type="text" name="DomicilioEntrega" value="<?php echo $_GET['DomicilioEntrega']; ?>" size="32"></td>
+    </tr>
+    <tr valign="baseline">
+      <td nowrap align="right">IdFormaEnvio:</td>
+      <td><input class="form-control  type="text" name="IdFormaEnvio" value="<?php echo $_GET['IdFormaEnvio']; ?>" size="32"></td>
+    </tr>
+    <tr valign="baseline">
+      <td nowrap align="right">IdEntrega:</td>
+      <td><input class="form-control  type="text" name="IdEntrega" value="<?php echo $_GET['IdEntrega']; ?>" size="32"></td>
+    </tr>
+    <tr valign="baseline">
+      <td nowrap align="right">IdVenta:</td>
+      <td><input class="form-control  type="text" name="IdVenta" value="<?php echo $_GET['IdVenta']; ?>" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
-      <td><input class="btn btn-default" type="submit" value="Insertar Suministro"></td>
+      <td><input  class="btn btn-default" type="submit" value="ActualizarEnvio" name="ActualizarEnvio"></td>
     </tr>
   </table>
   <input type="hidden" name="MM_insert" value="form2">
 </form>
-
-
-
-
+<p>&nbsp;</p>
 </body>
-</html> 
+</html>

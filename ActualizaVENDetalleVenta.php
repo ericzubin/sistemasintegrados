@@ -22,7 +22,7 @@ Desconectar($Con);
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Insertar Suministro</title>
+<title>Insertar Detalle Ventas</title>
 
  <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,6 +47,10 @@ Desconectar($Con);
 
 
 
+
+<?php
+     include 'menu.php';
+?>
 
 <div align="center">
                     <h1 class="page-header">Actualizar Detalle Ventas</h1>

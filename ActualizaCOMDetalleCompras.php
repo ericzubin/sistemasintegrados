@@ -24,7 +24,7 @@ header("Location: ConsultaCOMDetalleCompras.php");
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Actualizar Compras</title>
+<title>Actualizar Detalle Compras</title>
 
  <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,7 +53,7 @@ header("Location: ConsultaCOMDetalleCompras.php");
 
 
 <div align="center">
-                    <h1 class="page-header">Actualizar Compras</h1>
+                    <h1 class="page-header">Actualizar Detalle Compras</h1>
 </div>
 
 

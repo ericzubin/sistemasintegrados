@@ -1,4 +1,5 @@
 <?php
+if ( array_key_exists("InsertarSuministro", $_POST) ) {
 $idPuesto=$_POST['idSurcusal'];
 $Nombre=$_POST['Nombre'];
 $localizacion=$_POST['localizacion'];
@@ -14,6 +15,8 @@ Ejecutar($Query,$Con);
 
 
 Desconectar($Con);
+}
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,7 +25,7 @@ Desconectar($Con);
 <title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Insertar Suministro</title>
+<title>Insertar Cuentas</title>
 
  <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +43,9 @@ Desconectar($Con);
 <body>
 
 
-
+<?php
+     include 'menu.php';
+?>
 
 <div align="center">
                     <h1 class="page-header">Insertar Cuentas</h1>
@@ -93,7 +98,7 @@ Desconectar($Con);
      <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
       
-      <td><input class="btn btn-default" type="submit" value="Insertar Suministro"></td>
+      <td><input class="btn btn-default" type="submit" value="InsertarSuministro" name="InsertarSuministro"></td>
      </tr>
    </table>
    <input type="hidden" name="MM_insert" value="form2">

@@ -1,13 +1,45 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Consultar Metodos de Pago</title>
+
+
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<?php
+     include 'menu.php';
+?>
+
+<div align="center">
+                    <h1 class="page-header">Consultar Metodos de Pago</h1>
+</div>
+<div class="col-lg-2">
 <form name="form1" method="post" action="">
   <p>
     <label>Criterio
-    <input name="Criterio" type="text" id="Criterio">
+    <input class="form-control" name="Criterio" type="text" id="Criterio">
     </label>
   </p>
   <p>
+
+    <div class="form-group">
+      <div class="radio">
+
     <label>
-    <input type="radio" name="Campo" value="IdMetodoPago">
-    IdMetodoPago</label>
+    <input type="radio" name="Campo" value="idMetodoPago">
+    IdMetododepago</label>
     <br>
     <label>
     <input type="radio" name="Campo" value="Nombre">
@@ -19,22 +51,37 @@
     <br>
     <label>
     <input type="radio" name="Campo" value="Observacion">
-    Observacion</label>
+    Observaciones</label>
     <br>
     <label>
     <input type="radio" name="Campo" value="IdCliente">
     IdCliente</label>
     <br>
- 
+
+  </div>
+    </div>
+
+</div>
 
   </p>
   <p>&nbsp;</p>
   <p>
     <label>
-    <input type="submit" name="Submit" value="Consultar">
+    <input  class="btn btn-default" type="submit" name="Submit" value="Consultar">
     </label>
   </p>
 </form>
+<?php
+  if(isset($_GET['Idg']))
+  {
+    include("conectadb.php");
+
+    $Con=Conectar();
+    $Querydel="DELETE FROM finmetodosdepago  where idMetodoPago =".$_GET['Idg'];
+    mysqli_query($Con,$Querydel) or die("Mensaje Error");
+    header('Location:ConsultaFinMetodosDePago.php');
+  }
+?>
 <?php
 if (isset($_POST['Criterio'])){
 
@@ -46,8 +93,11 @@ $Campo=$_POST['Campo'];
 $Query="SELECT * FROM finmetodosdepago where $Campo = '$Criterio'";
 $Consulta=mysqli_query($Con,$Query) or die("Mensaje Error");
 //Tabla
-echo("<table border=1 >");
-echo("<tr>  <td>IdMetodoPago</td>  <td>Nombre</td>  <td>Status</td>  <td>Observacion </td>    <td>IdCliente </td>  <td> </td> <td> </td> </tr>");
+echo ("<div align='center' class='panel-body'>
+
+<div  class='table-responsive'>");
+echo("<table border=1 class='table table-striped table-bordered table-hover'>");
+echo("<tr>  <td>IdMetododepago</td>  <td>Nombre</td>  <td>status</td>  <td>Observaciones </td>    <td>IdCliente </td>     <td> </td> <td> </td> </tr>");
 
 for($a=0; $a < mysqli_num_rows($Consulta) ; $a++)
 	{
@@ -58,16 +108,17 @@ for($a=0; $a < mysqli_num_rows($Consulta) ; $a++)
 	echo ("<td> $fila[2] </td>");
 	echo ("<td> $fila[3] </td>");
   echo ("<td> $fila[4] </td>");
-  
 
-    echo ("<td> <a href='ActualizarMetodosDePago.php?Id".$fila[0]."&Nombre=".$fila[1]."&Status=".$fila[2]."&Observacion =".$fila[3]."&IdCliente=".$fila[4]."'> Actualizar</a></td>");
+ echo ("<td> <a class='btn btn-primary' href='ActualizarFinmetodosdepagos.php?IdFormadepago=".$fila[0]."&Nombre=".$fila[1]."&Status=".$fila[2]."&Observaciones=".$fila[3]."&IdCliente=".$fila[4]."'> Actualizar</a></td>");
 
-	echo ("<td>  <a href='EliminarMetodosDePago.php?Id=".$fila[0]."'>Eliminar</a>             </td>");
+	echo ("<td>  <a class='btn btn-danger' href='ConsultaFinMetodosDePago.php?Idg=".$fila[0]."'>Eliminar</a></td>");
 
 
-	echo ("</tr>");	
+	echo ("</tr>");
 	}
 echo("</table>");
+echo ("</div>
+</div>");
 
 }
 ?>

@@ -53,12 +53,33 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+<title>Mostrar Detalle Ventas</title>
+
+ <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<?php
+     include 'menu.php';
+?>
+<div align="center">
+                    <h1 class="page-header">Mostra Detalle Ventas</h1>
+</div>
+<div align="center" class="panel-body">
+
+<div  class="table-responsive">
 <form id="form1" name="form1" method="post" action="">
-  <table border="1">
+  <table border="1" class="table table-striped table-bordered table-hover">
     <tr>
       <td>IdDetalleVenta</td>
       <td>IdVenta</td>

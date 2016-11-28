@@ -1,28 +1,29 @@
 <?php
-$idPuesto=$_POST['idSurcusal'];
-$Nombre=$_POST['Nombre'];
-$localizacion=$_POST['localizacion'];
+if ( array_key_exists("Insertar", $_POST) ) {
+
+$IdDevolucion=$_POST['IdDevolucion'];
+$Fecha=$_POST['Fecha'];
+$Motivo=$_POST['Motivo'];
 $Status=$_POST['Status'];
-$Telefono=$_POST['Telefono'];
-$DomicilioFiscal=$_POST['DomicilioFiscal'];
+$IdVenta=$_POST['Telefono'];
+$IdCompra=$_POST['IdCompra'];
 
 
 include('conectadb.php');
 $Con=Conectar();
-$Query="INSERT INTO rhsucursales VALUES ('', '$Nombre','$localizacion','$Status','$Telefono','$DomicilioFiscal')";
+$Query="INSERT INTO vendevoluciones VALUES ('', '$Fecha','$Motivo','$Status','$IdVenta','$IdCompra')";
 Ejecutar($Query,$Con);
 
 
 Desconectar($Con);
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Insertar Suministro</title>
+<title>Insertar Devoluciones</title>
 
  <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,44 +40,46 @@ Desconectar($Con);
 
 <body>
 
-
+<?php
+     include 'menu.php';
+?>
 
 
 <div align="center">
-                    <h1 class="page-header">Devoluciones</h1>
+                    <h1 class="page-header">Insertar Devoluciones</h1>
 </div>
 
 
 <form id="form1" name="form1" method="post" action="">
  </form>
  
- <form method="post" name="form2" action="<?php echo $editFormAction; ?>">
+ <form method="post" name="form2" action="">
    <table align="center">
     <tr valign="baseline">
       <td nowrap align="right">IdDevolucion:</td>
       
-      <td><input class="form-control" type="text" name="IdSuministro" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="IdDevolucion" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">Fecha:</td>
       
-      <td><input class="form-control" type="text" name="Nombre" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="Fecha" value="" size="32"></td>
     </tr>
      <tr valign="baseline">
        <td nowrap align="right">Motivo:</td>
       
-      <td><input  class="form-control" type="text" name="Caracteristicas" value="" size="32"></td>
+      <td><input  class="form-control" type="text" name="Motivo" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">IdVenta:</td>
       
-      <td><input class="form-control" type="text" name="Estado" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="IdVenta" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
       
       
       <td nowrap align="right">Id Compra:</td>
-      <td><input class="form-control" type="text" name="TipoSuministro" value="" size="32"></td>
+      <td><input class="form-control" type="text" name="IdCompra" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
      
@@ -85,7 +88,7 @@ Desconectar($Con);
      
       <td nowrap align="right">&nbsp;</td>
       
-      <td><input class="btn btn-default" type="submit" value="Insertar Suministro"></td>
+      <td><input class="btn btn-default" type="submit" value="Insertar"></td>
      </tr>
    </table>
    <input type="hidden" name="MM_insert" value="form2">

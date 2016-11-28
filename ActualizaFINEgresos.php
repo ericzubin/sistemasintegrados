@@ -46,6 +46,10 @@ header("Location: ConsultaFINEgresos.php");
 
 
 
+<?php
+     include 'menu.php';
+?>
+
 
 
 

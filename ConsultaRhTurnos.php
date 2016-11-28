@@ -17,6 +17,11 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
+<?php
+     include 'menu.php';
+?>
+
+
 <div align="center">
                     <h1 class="page-header">Consultar Turnos</h1>
 </div>
@@ -28,6 +33,8 @@
     </label>
   </p>
   <p>
+    <div class="form-group">
+      <div class="radio">
     <label>
     <input type="radio" name="Campo" value="IdTurno">
     IdTurno</label>
@@ -58,13 +65,15 @@
     <input type="radio" name="Campo" value="Status">
     Status</label>
     <br>
+  </div>
+    </div>
 
 
   </p>
   <p>&nbsp;</p>
   <p>
     <label>
-    <input type="submit" name="Submit" value="Consultar">
+    <input class="btn btn-default" type="submit" name="Submit" value="Consultar">
     </label>
   </p>
 </form>
@@ -79,8 +88,9 @@ $Campo=$_POST['Campo'];
 $Query="SELECT * FROM rhturnos where $Campo = '$Criterio'";
 $Consulta=mysqli_query($Con,$Query) or die("Mensaje Error");
 //Tabla
-echo("<table border=1 >");
-echo ("<div align='center' class='panel-body'><div  class='table-responsive'>");
+echo ("<div align='center' class='panel-body'>
+
+<div  class='table-responsive'>");
 echo("<table border=1 class='table table-striped table-bordered table-hover'>");
 echo("<tr>  <td>IdTurno</td>  <td>Nombre</td>  <td>HoraEntrada</td>  <td>HoraSalida </td>    <td>DiasLaborales </td>   <td>TipoJornada </td>    <td>Status </td>     <td> </td> <td> </td> </tr>");
 
