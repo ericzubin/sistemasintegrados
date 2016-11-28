@@ -9,33 +9,33 @@ $importe = $_POST['importe'];
 $total = $_POST['total'];
 $pago = $_POST['pago'];
 $cambio = $pago - $total;
-$conexion = mysqli_connect('localhost','root','tallerphp','limpieza');
-
+//$conexion = mysqli_connect('localhost','root','tallerphp','limpieza');
+/*
     if(!$conexion){
       echo "oh no, hay un error";
     }
-  
+  */
 $fecha = date("Y/m/d");
 
-getdate ($timestamp);
+//getdate ($timestamp);
 
 
-
+/*
 $insert = "INSERT INTO venta( fecha, hora, total) VALUES ('" 
  .$fecha . "','" .$hora. "','" . $total . "');";
 $conexion->query($insert);
-
+*/
 
 require('fpdf.php');
 $pdf = new FPDF('P','mm',array(250,80));
 $pdf->AddPage();
 // Logo
-$pdf->Image('../logo.png',6,3,12);
+//$pdf->Image('../logo.png',6,3,12);
 $pdf->SetFont('Arial','',19);
  $pdf->SetXY(19, 5);
-$pdf->Cell(0, 0,'"Productos de');
+$pdf->Cell(0, 0,'"Ticket de');
 $pdf->SetXY(19, 12);
-$pdf->Cell(0, 0,'Limpieza Paty"');
+$pdf->Cell(0, 0,'Compras"');
 $pdf->SetXY(0, 10);
 $pdf->ln(9);
 $pdf->SetFont('Arial','',9);
@@ -74,21 +74,21 @@ $pdf->SetX(4);
 $pdf->SetXY(0, 42);
 $pdf->Cell(0,0, "--------------------------------------------------------------------------");
 $pdf->ln(8);
-
+/*
 $conexion = mysql_connect("localhost", "root", "tallerphp");
 mysql_select_db("limpieza",$conexion); 
 $compra = mysql_query("select * from detalle_compra", $conexion) or die(mysql_error());
 while ($fila = mysql_fetch_array($compra)){
-
+*/
 $pdf->SetX(13);
-$pdf->Cell(44, 3,$fila[producto],0);
+$pdf->Cell(44, 3,$producto,0);
 $pdf->ln(3);
 $pdf->SetX(5);
-$pdf->Cell(6, 3,$fila[cantidad],0);
+$pdf->Cell(6, 3,$cantidad,0);
 $pdf->SetX(47);
-$pdf->Cell(8, 3,$fila[precioUnitario],0);
+$pdf->Cell(8, 3,$precioUnitario,0);
 $pdf->SetX(65);
-$pdf->Cell(8, 3,$fila[importe],0);
+$pdf->Cell(8, 3,$importe,0);
 $pdf->ln(3);
 }
 $pdf->ln(3);
@@ -131,17 +131,18 @@ $pdf->Cell(0,0, "*");
 $pdf->ln(1);
 $pdf->Output();
 
-}
+//}
 
 ?>
 
 <form action='venta.php'>
 <?php
+/*
 $conex = mysqli_connect('localhost','root','tallerphp','limpieza');  
 $nuevaCompra = "DELETE FROM detalle_compra WHERE 1";
  $resultadoNuevaVenta =mysqli_query($conex, $conuevaComprampra);
  $conex->query($nuevaCompra);
-
+*/
 ?>
 <input type="submit" value="nueva venta">
 </form>

@@ -1,5 +1,5 @@
 <?php
-/*
+
   require_once('funciones/sesiones.php'); 
   validaSesion();
   $TipoUser=obtenerTipoUsuario();
@@ -10,7 +10,7 @@
   {
       header("Location: login.html");
   }
-  */ 
+  
 ?>
 
 

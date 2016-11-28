@@ -87,8 +87,6 @@ CREATE TABLE `comproveedores` (
 -- Volcado de datos para la tabla `comproveedores`
 --
 
-INSERT INTO `comproveedores` (`IdProveedor`, `Nombre`, `DomicilioFiscal`, `DomicilioParticular`, `RFC`, `Telefono`, `Correo`, `Status`) VALUES
-(1, 'qq', 'qq', 'qq', 'qq', 1, 'asas@ass.com', 1);
 
 -- --------------------------------------------------------
 
@@ -317,9 +315,6 @@ CREATE TABLE `rhdepartamentos` (
 -- Volcado de datos para la tabla `rhdepartamentos`
 --
 
-INSERT INTO `rhdepartamentos` (`IdDepartamentos`, `Nombre`, `Localizacion`, `Status`) VALUES
-(2, 'Eric', '', 1),
-(3, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -369,11 +364,6 @@ CREATE TABLE `rhpuestos` (
 -- Volcado de datos para la tabla `rhpuestos`
 --
 
-INSERT INTO `rhpuestos` (`IdPuesto`, `Nombre`, `Status`, `Descripcion`, `Nivel`, `PersonalRequerido`) VALUES
-(1, 'Eric', 1, '1', '1', 1),
-(2, 'Eric', 1, '1', '1', 1),
-(3, 'Eric', 1, '', '', 0),
-(4, 'gerente', 1, 'nada', '2', 20);
 
 -- --------------------------------------------------------
 
@@ -394,8 +384,6 @@ CREATE TABLE `rhsucursales` (
 -- Volcado de datos para la tabla `rhsucursales`
 --
 
-INSERT INTO `rhsucursales` (`IdSucursal`, `Nombre`, `Localizacion`, `Status`, `Telefono`, `DomicilioFiscal`) VALUES
-(1, '1', '1', 1, 2147483647, '1');
 
 -- --------------------------------------------------------
 

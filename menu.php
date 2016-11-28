@@ -7,6 +7,10 @@
 ";
  echo " <a href='idiomaen.php'>Ingles</a>
 ";
+ echo " <a href='datos.php'>Informacion :D</a>";
+ echo " <a href='Pagar.php'>Pagar</a>";
+
+
   if($TipoUser=="User")
   {
     if($idioma=="es")
