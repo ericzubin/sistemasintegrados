@@ -1,3 +1,17 @@
+<?php
+
+  require_once('funciones/sesiones.php'); 
+  validaSesion();
+  $TipoUser=obtenerTipoUsuario();
+  if($TipoUser=="Admin")
+  {
+
+  }else
+  {
+      header("Location: login.html");
+  }
+  
+?>
 <?php require_once('Connections/localhost.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {

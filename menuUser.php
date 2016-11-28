@@ -118,11 +118,12 @@ ul, ol {
                        <li id="SYS"> <a href="MostrarSYSPermiso.php">Mostrar</a></li>
                     </ul>                
                  </li>   
-                   <li id="SYS" > <a href="">Tipos Cuentas</a>
+                   <li id="SYS" > <a href="">Tipos Cuentas
+</a>
                      <ul>
-                       <li id="SYS"> <a href="InsertarSYTiposCuentas.php">Insertar</a></li>
-                       <li id="SYS"> <a href="EliminarSYTiposCuentas.php">Consulta</a></li>
-                       <li id="SYS"> <a href="MostrarSYTiposCuentas.php">Mostrar</a></li>
+                        <li id="SYS"> <a href="insertTiposCuentas.php">Insertar</a></li>
+                       <li id="SYS"> <a href="ConsultaSysTiposCuentas.php">Consulta</a></li>
+                       <li id="SYS"> <a href="MuestraSysTiposCuentas.php">Mostrar</a></li>
                     </ul>                
                  </li>     
             </ul>
@@ -151,14 +152,16 @@ ul, ol {
                        <li id="RH"> <a href="MostrarRHPuestos.php">Mostrar</a></li>
                     </ul>
                  </li>
-                  <li id="RH"> <a href="">Surcusales</a>
+                  <li id="RH"> <a href="">Surcusales
+</a>
                     <ul>
                        <li id="RH"> <a href="insertaRHSurcusales.php">Insertar</a></li>
                        <li id="RH"> <a href="ConsultaRhSurcusales.php">Consultar</a></li>
                        <li id="RH"> <a href="MuestraRhSurcusales.php">Mostrar</a></li>
                     </ul>
                  </li>
-                  <li id="RH"> <a href="">Turnos</a>
+                  <li id="RH"> <a href="">Turnos 
+</a>
                     <ul>
                        <li id="RH"> <a href="insertaRHTurnos.php">Insertar</a></li>
                        <li id="RH"> <a href="ConsultaRhTurnos.php">Consultar</a></li>
@@ -177,14 +180,15 @@ ul, ol {
                        <li id="COM"> <a href="MostrarCOMCompras.php">Mostrar</a></li>
                     </ul>
                 </li>
-                <li id="COM"> <a href="">Detalle Compras</a>
+                <li id="COM"> <a href="">Detalle Compras 
+</a>
                     <ul>
                        <li id="COM"> <a href="InsertaCOMDetalleCompras.php">Insertar</a></li>
                        <li id="COM"> <a href="ConsultaCOMDetalleCompras.php">Consultar</a></li>
                        <li id="COM"> <a href="MostrarCOMDetalleCompras.php">Mostrar</a></li>
                     </ul>
                 </li>
-                <li id="COM"> <a href="">Pedidos</a>
+                <li id="COM"> <a href="">cash order</a>
                     <ul>
                        <li id="COM"> <a href="InsertaCOMPedidos.php">Insertar</a></li>
                        <li id="COM"> <a href="ConsultaCOMPedidos.php">Consultar</a></li>
@@ -209,9 +213,9 @@ ul, ol {
 
                  <li id="VEN"> <a href="">Clientes</a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENClientes.php">Insertar</a></li>
-                       <li id="VEN"> <a href="ActualizarVENClientes.php">Consulta</a></li>
-                       <li id="VEN"> <a href="MostrarVENClientes.php">Mostrar</a></li>
+                       <li id="VEN"> <a href="insertClientes.php">Insertar</a></li>
+                       <li id="VEN"> <a href="ConsultaVenClientes.php">Consulta</a></li>
+                       <li id="VEN"> <a href="MuestraVenClientes.php">Mostrar</a></li>
                     </ul>
 
               </li>
@@ -225,13 +229,14 @@ ul, ol {
               </li>
               <li id="VEN"> <a href="">Devoluciones</a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENDevoluciones.php">Insertar</a></li>
-                       <li id="VEN"> <a href="EliminarVENDevoluciones.php">Consulta</a></li>
-                       <li id="VEN"> <a href="MostrarVENDevoluciones.php">Mostrar</a></li>
+                      <li id="VEN"> <a href="insertaVENDevoluciones.php">Insertar</a></li>
+                       <li id="VEN"> <a href="ConsultaVenDevoluciones.php">Consulta</a></li>
+                       <li id="VEN"> <a href="MuestraVenDevoluciones.php">Mostrar</a></li>
                     </ul>
                     
               </li>
-                 <li id="VEN"> <a href="">Ventas</a>
+                 <li id="VEN"> <a href="">Ventas
+</a>
                     <ul>
                        <li id="VEN"> <a href="insertVentas.php">Insertar</a></li>
                        <li id="VEN"> <a href="ConsultaVenVentas.php">Consulta</a></li>
@@ -263,7 +268,7 @@ ul, ol {
                     </ul>
                     
               </li>
-              <li id="LOG"> <a href="">Formas De Envio</a>
+              <li id="LOG"> <a href="">Formas De Envio </a>
                     <ul>
                        <li id="LOG"> <a href="InsertarLOGFormasDeEnvio.php">Insertar</a></li>
                        <li id="LOG"> <a href="ConsultaLogFormasDeEnvio.php">Consultar</a></li>
@@ -289,7 +294,7 @@ ul, ol {
                     </ul>
                     
               </li>
-                <li id="INV"> <a href="">Categorias Productos</a>
+                <li id="INV"> <a href=""> Categorias Productos</a>
                     <ul>
                        <li id="INV"> <a href="InsertarINVCategoriasProductos.php">Insertar</a></li>
                        <li id="INV"> <a href="ConsultaInvCategoriasProductos.php">Consultar</a></li>
@@ -339,35 +344,37 @@ ul, ol {
                        <li id="FIN"> <a href="MostrarFINCuentasPorPagar.php">Mostrar</a></li>
                     </ul>
                    </li>
-                <li id="FIN"> <a href="">Cuentas Por Cobrar</a>
+                <li id="FIN"> <a href="">Cuentas Por Cobrar
+</a>
                     <ul>
                        <li id="FIN"> <a href="InsertaFINCuentasPorCobrar.php">Insertar</a></li>
                        <li id="FIN"> <a href="ConsultaFINCuentasPorCobrar.php">Consultar</a></li>
                        <li id="FIN"> <a href="MostrarFINCuentasPorCobrar.php">Mostrar</a></li>
                     </ul>
                    </li>  
-                   <li id="FIN" > <a href="">Egresos</a>
+                   <li id="FIN" > <a href="">Egresos </a>
                      <ul>
                        <li id="FIN"> <a href="InsertaFINEgresos.php">Insertar</a></li>
                        <li id="FIN"> <a href="ConsultaFINEgresos.php">Consultar</a></li>
                        <li id="FIN"> <a href="MostrarFINEgresos.php">Mostrar</a></li>
                     </ul>                
                  </li>
-                    <li id="FIN" > <a href="">Formas De Pago</a>
+                    <li id="FIN" > <a href="">Formas De Pago  </a>
                      <ul>
                        <li id="FIN"> <a href="InsertarFinformasdepago.php">Insertar</a></li>
                        <li id="FIN"> <a href="ConsultaFinFormasDePago.php">Consultar</a></li>
                        <li id="FIN"> <a href="Mostrarfinformasdepago.php">Mostrar</a></li>
                     </ul>                
                  </li> 
-                    <li id="FIN" > <a href="">Ingresos</a>
+                    <li id="FIN" > <a href="">INgresos</a>
                      <ul>
                        <li id="FIN"> <a href="InsertarFiningresos.php">Insertar</a></li>
                        <li id="FIN"> <a href="ConsultaFinIngresos.php">Consultar</a></li>
                        <li id="FIN"> <a href="Mostrarfiningresos.php">Mostrar</a></li>
                     </ul>                
                  </li>  
-                         <li id="FIN" > <a href="">Metodo De Pago</a>
+                         <li id="FIN" > <a href="">Metodo De Pago 
+</a>
                      <ul>
                        <li id="FIN"> <a href="InsertarFinmetodosdepago.php">Insertar</a></li>
                        <li id="FIN"> <a href="ConsultaFinMetodosDePago.php">Consultar</a></li>

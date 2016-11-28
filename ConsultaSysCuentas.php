@@ -1,3 +1,17 @@
+<?php
+
+  require_once('funciones/sesiones.php'); 
+  validaSesion();
+  $TipoUser=obtenerTipoUsuario();
+  if($TipoUser=="Admin")
+  {
+
+  }else
+  {
+      header("Location: login.html");
+  }
+  
+?>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 

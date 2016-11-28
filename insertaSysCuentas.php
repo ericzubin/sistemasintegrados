@@ -1,4 +1,18 @@
 <?php
+
+  require_once('funciones/sesiones.php'); 
+  validaSesion();
+  $TipoUser=obtenerTipoUsuario();
+  if($TipoUser=="Admin")
+  {
+
+  }else
+  {
+      header("Location: login.html");
+  }
+  
+?>
+<?php
 if ( array_key_exists("InsertarSuministro", $_POST) ) {
 $idPuesto=$_POST['idSurcusal'];
 $Nombre=$_POST['Nombre'];

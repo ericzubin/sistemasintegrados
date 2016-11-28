@@ -18,6 +18,7 @@ if($acceso == 1){
 			session_start();
 			$_SESSION['fecha_ingreso'] = time();
 			$_SESSION['idioma'] = "es";
+            setcookie("Idioma","es");
 
 		$query2 = mysqli_query($Conexion, "UPDATE syscuentas SET FechaUltimoAcceso = now() WHERE IdCuenta= '$fusuario'");
 
@@ -31,6 +32,7 @@ if($acceso == 1){
 			$_SESSION['fecha_ingreso'] = time();
 			$_SESSION['tipoUser'] = "User";
 			$_SESSION['idioma'] = "es";
+            setcookie("Idioma","es");
 
 
 			header("Location: menuUser.php");

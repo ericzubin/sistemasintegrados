@@ -111,18 +111,18 @@ ul, ol {
    
           <li id="SYS"><a href="">SYS</a>
           	<ul>
-                <li id="SYS" > <a href="">Permisos</a>
+                <li id="SYS" > <a href=""> Permits</a>
                      <ul>
-                       <li id="SYS"> <a href="InsertarSYSPermiso.php">Insert</a></li>
-                       <li id="SYS"> <a href="EliminarSYSPermiso.php">Consulta</a></li>
-                       <li id="SYS"> <a href="MostrarSYSPermiso.php">Show</a></li>
+                       <li id="SYS"> <a href="insertPerrmisos.php">Insert</a></li>
+                       <li id="SYS"> <a href="EliminarSYSPermiso.php">Consult</a></li>
+                       <li id="SYS"> <a href="MostrarSYSPermiso.php">To show</a></li>
                     </ul>                
                  </li>   
-                   <li id="SYS" > <a href="">Tipos Cuentas</a>
+                   <li id="SYS" > <a href="">Types Accounts</a>
                      <ul>
-                       <li id="SYS"> <a href="InsertarSYTiposCuentas.php">Insert</a></li>
-                       <li id="SYS"> <a href="EliminarSYTiposCuentas.php">Consulta</a></li>
-                       <li id="SYS"> <a href="MostrarSYTiposCuentas.php">Mostrar</a></li>
+                        <li id="SYS"> <a href="insertTiposCuentas.php">Insert</a></li>
+                       <li id="SYS"> <a href="ConsultaSysTiposCuentas.php">Consult</a></li>
+                       <li id="SYS"> <a href="MuestraSysTiposCuentas.php">To show</a></li>
                     </ul>                
                  </li>     
             </ul>
@@ -130,39 +130,39 @@ ul, ol {
           <li id="RH"><a href="">RH</a>
               <ul>
 
-                <li id="RH"> <a href="">Departamentos</a>
+                <li id="RH"> <a href=""> Departments </a>
                     <ul>
-                       <li id="RH"> <a href="InsertarRHDepartamentos.php">Insertar</a></li>
-                       <li id="RH"> <a href="ConsultaRhDepartamentos.php">Consultar</a></li>
-                       <li id="RH"> <a href="MostrarRHDepartamentos.php">Mostrar</a></li>
+                       <li id="RH"> <a href="InsertarRHDepartamentos.php">Insert</a></li>
+                       <li id="RH"> <a href="ConsultaRhDepartamentos.php">Consult</a></li>
+                       <li id="RH"> <a href="MostrarRHDepartamentos.php">To show</a></li>
                     </ul>
                  </li>
-                  <li id="RH"> <a href="">Empleados</a>
+                  <li id="RH"> <a href=""> Employees </a>
                     <ul>
-                       <li id="RH"> <a href="InsertarRHEmpleados.php">Insertar</a></li>
-                       <li id="RH"> <a href="ConsultaRhEmpleados.php">Consultar</a></li>
-                       <li id="RH"> <a href="MostrarRHEmpleados.php">Mostrar</a></li>
+                       <li id="RH"> <a href="InsertarRHEmpleados.php">Insert</a></li>
+                       <li id="RH"> <a href="ConsultaRhEmpleados.php">Consult</a></li>
+                       <li id="RH"> <a href="MostrarRHEmpleados.php">To show</a></li>
                     </ul>
                  </li>
-                  <li id="RH"> <a href="">Puestos</a>
+                  <li id="RH"> <a href="">Posts </a>
                     <ul>
-                       <li id="RH"> <a href="InsertarRHPuestos.php">Insertar</a></li>
-                       <li id="RH"> <a href="ConsultaRhPuestos.php">Consultar</a></li>
-                       <li id="RH"> <a href="MostrarRHPuestos.php">Mostrar</a></li>
+                       <li id="RH"> <a href="InsertarRHPuestos.php">Insert</a></li>
+                       <li id="RH"> <a href="ConsultaRhPuestos.php">Consult</a></li>
+                       <li id="RH"> <a href="MostrarRHPuestos.php">To show</a></li>
                     </ul>
                  </li>
-                  <li id="RH"> <a href="">Surcusales</a>
+                  <li id="RH"> <a href="">Branch offices</a>
                     <ul>
-                       <li id="RH"> <a href="insertaRHSurcusales.php">Insertar</a></li>
-                       <li id="RH"> <a href="ConsultaRhSurcusales.php">Consultar</a></li>
-                       <li id="RH"> <a href="MuestraRhSurcusales.php">Mostrar</a></li>
+                       <li id="RH"> <a href="insertaRHSurcusales.php">Insert</a></li>
+                       <li id="RH"> <a href="ConsultaRhSurcusales.php">Consult</a></li>
+                       <li id="RH"> <a href="MuestraRhSurcusales.php">To show</a></li>
                     </ul>
                  </li>
-                  <li id="RH"> <a href="">Turnos</a>
+                  <li id="RH"> <a href="">Work shifts</a>
                     <ul>
-                       <li id="RH"> <a href="insertaRHTurnos.php">Insertar</a></li>
-                       <li id="RH"> <a href="ConsultaRhTurnos.php">Consultar</a></li>
-                       <li id="RH"> <a href="MuestraRhTurnos.php">Mostrar</a></li>
+                       <li id="RH"> <a href="insertaRHTurnos.php">Insert</a></li>
+                       <li id="RH"> <a href="ConsultaRhTurnos.php">Consult</a></li>
+                       <li id="RH"> <a href="MuestraRhTurnos.php">To show</a></li>
                     </ul>
                  </li>
               </ul>
@@ -170,32 +170,32 @@ ul, ol {
           <li id="COM"><a href="">COM</a>
               <ul>
 
-                <li id="COM"> <a href="">Compras</a>
+                <li id="COM"> <a href="">Purchases </a>
                     <ul>
-                       <li id="COM"> <a href="InsertaCOMCompras.php">Insertar</a></li>
-                       <li id="COM"> <a href="ConsultaCOMCompras.php">Consultar</a></li>
-                       <li id="COM"> <a href="MostrarCOMCompras.php">Mostrar</a></li>
+                       <li id="COM"> <a href="InsertaCOMCompras.php">Insert</a></li>
+                       <li id="COM"> <a href="ConsultaCOMCompras.php">Consult</a></li>
+                       <li id="COM"> <a href="MostrarCOMCompras.php">To show</a></li>
                     </ul>
                 </li>
-                <li id="COM"> <a href="">Detalle Compras</a>
+                <li id="COM"> <a href="">Shopping Detail</a>
                     <ul>
-                       <li id="COM"> <a href="InsertaCOMDetalleCompras.php">Insertar</a></li>
-                       <li id="COM"> <a href="ConsultaCOMDetalleCompras.php">Consultar</a></li>
-                       <li id="COM"> <a href="MostrarCOMDetalleCompras.php">Mostrar</a></li>
+                       <li id="COM"> <a href="InsertaCOMDetalleCompras.php">Insert</a></li>
+                       <li id="COM"> <a href="ConsultaCOMDetalleCompras.php">Consult</a></li>
+                       <li id="COM"> <a href="MostrarCOMDetalleCompras.php">To show</a></li>
                     </ul>
                 </li>
-                <li id="COM"> <a href="">Pedidos</a>
+                <li id="COM"> <a href="">cash order </a>
                     <ul>
-                       <li id="COM"> <a href="InsertaCOMPedidos.php">Insertar</a></li>
-                       <li id="COM"> <a href="ConsultaCOMPedidos.php">Consultar</a></li>
-                       <li id="COM"> <a href="MostrarCOMPedidos.php">Mostrar</a></li>
+                       <li id="COM"> <a href="InsertaCOMPedidos.php">Insert</a></li>
+                       <li id="COM"> <a href="ConsultaCOMPedidos.php">Consult</a></li>
+                       <li id="COM"> <a href="MostrarCOMPedidos.php">To show</a></li>
                     </ul>
                 </li>
                 <li id="COM"> <a href="">Proveedores</a>
                     <ul>
-                       <li id="COM"> <a href="InsertaCOMProveedores.php">Insertar</a></li>
-                       <li id="COM"> <a href="ConsultaCOMProveedores.php">Consultar</a></li>
-                       <li id="COM"> <a href="MostrarCOMProveedores.php">Mostrar</a></li>
+                       <li id="COM"> <a href="InsertaCOMProveedores.php">Insert</a></li>
+                       <li id="COM"> <a href="ConsultaCOMProveedores.php">Consult</a></li>
+                       <li id="COM"> <a href="MostrarCOMProveedores.php">To show</a></li>
                     </ul>
                 </li>
 
@@ -207,35 +207,35 @@ ul, ol {
           <li id="VEN"><a href="">VEN</a>
               <ul>
 
-                 <li id="VEN"> <a href="">Clientes</a>
+                 <li id="VEN"> <a href="">customers </a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENClientes.php">Insertar</a></li>
-                       <li id="VEN"> <a href="ActualizarVENClientes.php">Consulta</a></li>
-                       <li id="VEN"> <a href="MostrarVENClientes.php">Mostrar</a></li>
+                       <li id="VEN"> <a href="insertClientes.php">Insert</a></li>
+                       <li id="VEN"> <a href="ConsultaVenClientes.php">Consult</a></li>
+                       <li id="VEN"> <a href="MuestraVenClientes.php">To show</a></li>
                     </ul>
 
               </li>
-              <li id="VEN"> <a href="">Detalle Ventas</a>
+              <li id="VEN"> <a href="">Sales Detail </a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENDetalleVentas.php">Insertar</a></li>
-                       <li id="VEN"> <a href="ActualizarVENDetalleVentas.php">Consulta</a></li>
-                       <li id="VEN"> <a href="MostrarVENDetalleVentas.php">Mostrar</a></li>
+                       <li id="VEN"> <a href="insertDetalleVentas.php">Insert</a></li>
+                       <li id="VEN"> <a href="ConsultaVenDetalleVentas.php">Consult</a></li>
+                       <li id="VEN"> <a href="MuestraVenDetalleVentas.php">To show</a></li>
                     </ul>
                     
               </li>
-              <li id="VEN"> <a href="">Devoluciones</a>
+              <li id="VEN"> <a href=""> Returns </a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENDevoluciones.php">Insertar</a></li>
-                       <li id="VEN"> <a href="EliminarVENDevoluciones.php">Consulta</a></li>
-                       <li id="VEN"> <a href="MostrarVENDevoluciones.php">Mostrar</a></li>
+                      <li id="VEN"> <a href="insertaVENDevoluciones.php">Insert</a></li>
+                       <li id="VEN"> <a href="ConsultaVenDevoluciones.php">Consult</a></li>
+                       <li id="VEN"> <a href="MuestraVenDevoluciones.php">To show</a></li>
                     </ul>
                     
               </li>
-                 <li id="VEN"> <a href="">Ventas</a>
+                 <li id="VEN"> <a href="">Customer Service </a>
                     <ul>
-                       <li id="VEN"> <a href="InsertarVENVentas.php">Insertar</a></li>
-                       <li id="VEN"> <a href="EliminarVENVentas.php">Consulta</a></li>
-                       <li id="VEN"> <a href="MostrarVENVentas.php">Mostrar</a></li>
+                       <li id="VEN"> <a href="insertVentas.php">Insert</a></li>
+                       <li id="VEN"> <a href="ConsultaVenVentas.php">Consult</a></li>
+                       <li id="VEN"> <a href="MuestraVenVentas.php">To show</a></li>
                     </ul>
                     
               </li>
@@ -247,27 +247,27 @@ ul, ol {
 
           <li id="LOG"><a href="">LOG</a>
             <ul>
-              <li id="LOG"> <a href="">Entregas</a>
+              <li id="LOG"> <a href="">Deliveries </a>
                     <ul>
-                       <li id="LOG"> <a href="InsertarLOGEntregas.php">Insertar</a></li>
-                       <li id="LOG"> <a href="ConsultaLogEntregas.php">Consulta</a></li>
-                       <li id="LOG"> <a href="MostrarLOGEntregas.php">Mostrar</a></li>
+                       <li id="LOG"> <a href="InsertarLOGEntregas.php">Insert</a></li>
+                       <li id="LOG"> <a href="ConsultaLogEntregas.php">Consult</a></li>
+                       <li id="LOG"> <a href="MostrarLOGEntregas.php">To show</a></li>
                     </ul>
                     
               </li>
-              <li id="LOG"> <a href="">Envios</a>
+              <li id="LOG"> <a href="">Shipping </a>
                     <ul>
-                       <li id="LOG"> <a href="InsertarLOGEnvios.php">Insertar</a></li>
-                       <li id="LOG"> <a href="ConsultaLogEnvios.php">Consultar</a></li>
-                       <li id="LOG"> <a href="MostrarLOGEnvios.php">Mostrar</a></li>
+                       <li id="LOG"> <a href="InsertarLOGEnvios.php">Insert</a></li>
+                       <li id="LOG"> <a href="ConsultaLogEnvios.php">Consult</a></li>
+                       <li id="LOG"> <a href="MostrarLOGEnvios.php">To show</a></li>
                     </ul>
                     
               </li>
-              <li id="LOG"> <a href="">Formas De Envio</a>
+              <li id="LOG"> <a href="">transport</a>
                     <ul>
-                       <li id="LOG"> <a href="InsertarLOGFormasDeEnvio.php">Insertar</a></li>
-                       <li id="LOG"> <a href="ConsultaLogFormasDeEnvio.php">Consultar</a></li>
-                       <li id="LOG"> <a href="MostrarLOGFormasDeEnvio.php">Mostrar</a></li>
+                       <li id="LOG"> <a href="InsertarLOGFormasDeEnvio.php">Insert</a></li>
+                       <li id="LOG"> <a href="ConsultaLogFormasDeEnvio.php">Consult</a></li>
+                       <li id="LOG"> <a href="MostrarLOGFormasDeEnvio.php">To show</a></li>
                     </ul>
                     
               </li>
@@ -281,43 +281,43 @@ ul, ol {
 
           <li id="INV"><a href="">INV</a>
           <ul>
-            <li id="INV"> <a href="">Activos Fijos</a>
+            <li id="INV"> <a href="">Fixed assets </a>
                     <ul>
-                       <li id="INV"> <a href="InsertarInactivosfijos.php">Insertar</a></li>
-                       <li id="INV"> <a href="ConsultaInvActivosFijos.php">Consultar</a></li>
-                       <li id="INV"> <a href="Mostrarinactivosfijos.php">Mostrar</a></li>
+                       <li id="INV"> <a href="InsertarInactivosfijos.php">Insert</a></li>
+                       <li id="INV"> <a href="ConsultaInvActivosFijos.php">Consult</a></li>
+                       <li id="INV"> <a href="Mostrarinactivosfijos.php">To show</a></li>
                     </ul>
                     
               </li>
-                <li id="INV"> <a href="">Categorias Productos</a>
+                <li id="INV"> <a href="">Categories</a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVCategoriasProductos.php">Insertar</a></li>
-                       <li id="INV"> <a href="ConsultaInvCategoriasProductos.php">Consultar</a></li>
-                       <li id="INV"> <a href="MostrarINVCategoriasProductos.php">Mostrar</a></li>
+                       <li id="INV"> <a href="InsertarINVCategoriasProductos.php">Insert</a></li>
+                       <li id="INV"> <a href="ConsultaInvCategoriasProductos.php">Consult</a></li>
+                       <li id="INV"> <a href="MostrarINVCategoriasProductos.php">To show</a></li>
                     </ul>
                     
               </li>
-                <li id="INV"> <a href="">Nominas</a>
+                <li id="INV"> <a href="">Payroll </a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVNominas.php">Insertar</a></li>
-                       <li id="INV"> <a href="ConsultaInvNominas.php">Consultar</a></li>
-                       <li id="INV"> <a href="Mostrarinvnominas.php">Mostrar</a></li>
+                       <li id="INV"> <a href="InsertarINVNominas.php">Insert</a></li>
+                       <li id="INV"> <a href="ConsultaInvNominas.php">Consult</a></li>
+                       <li id="INV"> <a href="Mostrarinvnominas.php">To show</a></li>
                     </ul>
                     
               </li>
-               <li id="INV"> <a href="">Productos</a>
+               <li id="INV"> <a href="">Products </a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVProductos.php">Insertar</a></li>
-                       <li id="INV"> <a href="ConsultaInvProductos.php">Consultar</a></li>
-                       <li id="INV"> <a href="Mostrarinproductos.php">Mostrar</a></li>
+                       <li id="INV"> <a href="InsertarINVProductos.php">Insert</a></li>
+                       <li id="INV"> <a href="ConsultaInvProductos.php">Consult</a></li>
+                       <li id="INV"> <a href="Mostrarinproductos.php">To show</a></li>
                     </ul>
                     
               </li>
-              <li id="INV"> <a href="">Suministros</a>
+              <li id="INV"> <a href="">Supplies </a>
                     <ul>
-                       <li id="INV"> <a href="InsertarINVSuministros.php">Insertar</a></li>
-                       <li id="INV"> <a href="ConsultaInvSuministros.php">Consultar</a></li>
-                       <li id="INV"> <a href="MostrarINVSuministros.php">Mostrar</a></li>
+                       <li id="INV"> <a href="InsertarINVSuministros.php">Insert</a></li>
+                       <li id="INV"> <a href="ConsultaInvSuministros.php">Consult</a></li>
+                       <li id="INV"> <a href="MostrarINVSuministros.php">To show</a></li>
 
                        
                     </ul>
@@ -332,46 +332,46 @@ ul, ol {
 
             <li id="FIN"><a href="">FIN</a>
                 <ul>
-                  <li id="FIN"> <a href="">Cuentas Por Pagar</a>
+                  <li id="FIN"> <a href="">Debts to pay </a>
                     <ul>
-                       <li id="FIN"> <a href="InsertaFINCuentasPorPagar.php">Insertar</a></li>
-                       <li id="FIN"> <a href="ConsultaFINCuentasPorPagar.php">Consultar</a></li>
-                       <li id="FIN"> <a href="MostrarFINCuentasPorPagar.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertaFINCuentasPorPagar.php">Insert</a></li>
+                       <li id="FIN"> <a href="ConsultaFINCuentasPorPagar.php">Consult</a></li>
+                       <li id="FIN"> <a href="MostrarFINCuentasPorPagar.php">To show</a></li>
                     </ul>
                    </li>
-                <li id="FIN"> <a href="">Cuentas Por Cobrar</a>
+                <li id="FIN"> <a href=""> Accounts Receivable </a>
                     <ul>
-                       <li id="FIN"> <a href="InsertaFINCuentasPorCobrar.php">Insertar</a></li>
-                       <li id="FIN"> <a href="ConsultaFINCuentasPorCobrar.php">Consultar</a></li>
-                       <li id="FIN"> <a href="MostrarFINCuentasPorCobrar.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertaFINCuentasPorCobrar.php">Insert</a></li>
+                       <li id="FIN"> <a href="ConsultaFINCuentasPorCobrar.php">Consult</a></li>
+                       <li id="FIN"> <a href="MostrarFINCuentasPorCobrar.php">To show</a></li>
                     </ul>
                    </li>  
-                   <li id="FIN" > <a href="">Egresos</a>
+                   <li id="FIN" > <a href="">Expenses</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertaFINEgresos.php">Insertar</a></li>
-                       <li id="FIN"> <a href="ConsultaFINEgresos.php">Consultar</a></li>
-                       <li id="FIN"> <a href="MostrarFINEgresos.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertaFINEgresos.php">Insert</a></li>
+                       <li id="FIN"> <a href="ConsultaFINEgresos.php">Consult</a></li>
+                       <li id="FIN"> <a href="MostrarFINEgresos.php">To show</a></li>
                     </ul>                
                  </li>
-                    <li id="FIN" > <a href="">Formas De Pago</a>
+                    <li id="FIN" > <a href="">Payment Methods</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertarFinformasdepago.php">Insertar</a></li>
-                       <li id="FIN"> <a href="ConsultaFinFormasDePago.php">Consultar</a></li>
-                       <li id="FIN"> <a href="Mostrarfinformasdepago.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertarFinformasdepago.php">Insert</a></li>
+                       <li id="FIN"> <a href="ConsultaFinFormasDePago.php">Consult</a></li>
+                       <li id="FIN"> <a href="Mostrarfinformasdepago.php">To show</a></li>
                     </ul>                
                  </li> 
-                    <li id="FIN" > <a href="">Ingresos</a>
+                    <li id="FIN" > <a href="">Income</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertarFiningresos.php">Insertar</a></li>
-                       <li id="FIN"> <a href="ConsultaFinIngresos.php">Consultar</a></li>
-                       <li id="FIN"> <a href="Mostrarfiningresos.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertarFiningresos.php">Insert</a></li>
+                       <li id="FIN"> <a href="ConsultaFinIngresos.php">Consult</a></li>
+                       <li id="FIN"> <a href="Mostrarfiningresos.php">To show</a></li>
                     </ul>                
                  </li>  
-                         <li id="FIN" > <a href="">Metodo De Pago</a>
+                         <li id="FIN" > <a href="">Payment method</a>
                      <ul>
-                       <li id="FIN"> <a href="InsertarFinmetodosdepago.php">Insertar</a></li>
-                       <li id="FIN"> <a href="ConsultaFinMetodosDePago.php">Consultar</a></li>
-                       <li id="FIN"> <a href="Mostrarfinformasdepago.php">Mostrar</a></li>
+                       <li id="FIN"> <a href="InsertarFinmetodosdepago.php">Insert</a></li>
+                       <li id="FIN"> <a href="ConsultaFinMetodosDePago.php">Consult</a></li>
+                       <li id="FIN"> <a href="Mostrarfinformasdepago.php">To show</a></li>
                     </ul>                
                  </li>        
             </ul>

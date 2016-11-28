@@ -1,6 +1,18 @@
 <?php
 
+  require_once('funciones/sesiones.php'); 
+  validaSesion();
+  $TipoUser=obtenerTipoUsuario();
+  if($TipoUser=="Admin")
+  {
 
+  }else
+  {
+      header("Location: login.html");
+  }
+   
+?>
+<?php
 
 
 include('conectadb.php');

@@ -2,27 +2,35 @@
 
   require_once('funciones/sesiones.php'); 
   $TipoUser=obtenerTipoUsuario();
-  $idioma=$_SESSION['idioma'];
-
+  $idioma=$_COOKIE["Idioma"];
+  echo " <a href='idiomaes.php'>Español</a>
+";
+ echo " <a href='idiomaen.php'>Ingles</a>
+";
   if($TipoUser=="User")
   {
-    if($idioma="es")
+    if($idioma=="es")
     {
      include 'menuUser.php';
 
-    }else if($idioma="en"){
+    }
+    if($idioma=="en"){
+
      include 'menuUser_en.php';
 
     }
 
   }else if($TipoUser=="Admin")
   {
-      if($idioma="es")
+      if($idioma=="es")
       {
+
       include 'menuAdmin.php';
 
-      }else if($idioma="en"){
-             include 'menuAdmin_en.php';
+      } 
+      if($idioma=="en"){
+
+      include 'menuAdmin_en.php';
 
       }
   }
